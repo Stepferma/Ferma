@@ -1,0 +1,3 @@
+C:\Users\fivern\source\repos\Ferma\UserStore.DAL\obj\Debug\Ferma.DAL.Migrations.CreateUsersTable.resources
+C:\Users\fivern\source\repos\Ferma\UserStore.DAL\obj\Debug\Ferma.DAL.csproj.GenerateResource.cache
+C:\Users\fivern\source\repos\Ferma\UserStore.DAL\obj\Debug\Ferma.DAL.csproj.CoreCompileInputs.cache
