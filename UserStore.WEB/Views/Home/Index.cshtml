@@ -1,0 +1,9 @@
+﻿@using UserStore.Models
+@model List<UserViewModel>
+
+@foreach (UserViewModel user in Model)
+{
+    <h2>@user.UserName</h2>
+    <h3>@user.Email</h3>
+    <br>
+}

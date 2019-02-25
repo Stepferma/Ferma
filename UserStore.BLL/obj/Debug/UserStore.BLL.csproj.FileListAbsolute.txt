@@ -1,0 +1,58 @@
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\UserStore.BLL.dll.config
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\UserStore.BLL.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\UserStore.BLL.pdb
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\UserStore.DAL.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\UserStore.DAL.pdb
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\obj\Debug\UserStore.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\obj\Debug\UserStore.BLL.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\BookStore\BookStore.BLL\obj\Debug\UserStore.BLL.pdb
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\UserStore.BLL.dll.config
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\UserStore.BLL.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\UserStore.BLL.pdb
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\UserStore.DAL.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\UserStore.DAL.pdb
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\obj\Debug\UserStore.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\obj\Debug\UserStore.BLL.dll
+C:\Users\Eugene\Documents\Visual Studio 2015\Projects\CSharp\MVC5\UserStore\UserStore.BLL\obj\Debug\UserStore.BLL.pdb
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\UserStore.BLL.dll.config
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\UserStore.BLL.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\UserStore.BLL.pdb
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\EntityFramework.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\UserStore.DAL.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\UserStore.DAL.pdb
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\UserStore.DAL.dll.config
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\EntityFramework.xml
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\obj\Debug\UserStore.BLL.csprojAssemblyReference.cache
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\obj\Debug\UserStore.BLL.csproj.CoreCompileInputs.cache
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\obj\Debug\UserStore.BLL.csproj.CopyComplete
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\obj\Debug\UserStore.BLL.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\obj\Debug\UserStore.BLL.pdb
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\AutoMapper.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\Ninject.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\System.ValueTuple.dll
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\AutoMapper.pdb
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\AutoMapper.xml
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\Ninject.xml
+C:\Users\fivern\Desktop\UserStore\UserStore.BLL\bin\Debug\System.ValueTuple.xml
