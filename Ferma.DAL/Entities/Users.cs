@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ferma.DAL.Entities
 {
-    public class ClientProfile
+    public class Users
     {
         [Key]
         [ForeignKey("ApplicationUser")]

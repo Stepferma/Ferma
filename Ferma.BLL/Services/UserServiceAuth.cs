@@ -1,4 +1,5 @@
-﻿using Ferma.BLL.DTO;
+﻿using System;
+using Ferma.BLL.DTO;
 using Ferma.BLL.Infrastructure;
 using Ferma.DAL.Entities;
 using System.Threading.Tasks;
@@ -24,12 +25,12 @@ namespace Ferma.BLL.Services
             ApplicationUser user = await Database.UserManager.FindByEmailAsync(userDto.Email);
             if (user == null)
             {
-                user = new ApplicationUser { Email = userDto.Email, UserName = userDto.UserName };
+                user = new ApplicationUser { Email = userDto.Email, UserName = userDto.UserName, PasswordHash = userDto.Password};
                 await Database.UserManager.CreateAsync(user, userDto.Password);
 
-               // await Database.UserManager.AddToRoleAsync(user.Id, userDto.Role);
+                // await Database.UserManager.AddToRoleAsync(user.Id, userDto.Role);
 
-                ClientProfile clientProfile = new ClientProfile { Id = user.Id, UserName = userDto.UserName, Password = userDto.Password, Email = userDto.Email};
+                Users clientProfile = new Users { ApplicationUser = user,Id = user.Id, UserName = userDto.UserName, Password = userDto.Password, Email = userDto.Email};
                 Database.ClientManager.Create(clientProfile);
                 await Database.SaveAsync();
                 return new OperationDetails(true, "Регистрация успешно пройдена", "");
@@ -65,7 +66,6 @@ namespace Ferma.BLL.Services
 
         //    await Create(adminDto);
         //}
-
         public void Dispose()
         {
             Database.Dispose();

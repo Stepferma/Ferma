@@ -24,13 +24,13 @@ namespace Ferma.BLL.Services
             if (user == null)
             {
                 user = new ApplicationUser { UserName = userDTO.UserName, Email = userDTO.Email, PasswordHash = userDTO.Password};
-                ClientProfile Client = new ClientProfile
+                Users Client = new Users
                 {
                     UserName = userDTO.UserName,
                     ApplicationUser = user,
                     Id = user.Id
                 };
-                Database.ClientProfile.Create(Client);
+                Database.Users.Create(Client);
                 Database.Save();
                 return new OperationDetails(true, "Регистрация успешно пройдена", "");
 
@@ -43,15 +43,15 @@ namespace Ferma.BLL.Services
 
         public IEnumerable<UserDTO> GetList()
         {
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<ClientProfile, UserDTO>()).CreateMapper();
-            return mapper.Map<IEnumerable<ClientProfile>, List<UserDTO>>(Database.ClientProfile.GetAll());
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<Users, UserDTO>()).CreateMapper();
+            return mapper.Map<IEnumerable<Users>, List<UserDTO>>(Database.Users.GetAll());
         }
 
         public UserDTO GetID(string id)
         {
             if (id == null)
                 throw new ValidationException("Не установлено id телефона");
-            var user = Database.ClientProfile.GetID(id);
+            var user = Database.Users.GetID(id);
             if (user == null)
                 throw new ValidationException("Телефон не найден");
 

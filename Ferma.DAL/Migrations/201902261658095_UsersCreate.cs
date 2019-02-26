@@ -3,12 +3,12 @@ namespace Ferma.DAL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreateUsersTable : DbMigration
+    public partial class UsersCreate : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.ClientProfiles",
+                "dbo.Users",
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
@@ -94,7 +94,7 @@ namespace Ferma.DAL.Migrations
         public override void Down()
         {
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
-            DropForeignKey("dbo.ClientProfiles", "Id", "dbo.AspNetUsers");
+            DropForeignKey("dbo.Users", "Id", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
@@ -104,13 +104,13 @@ namespace Ferma.DAL.Migrations
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
-            DropIndex("dbo.ClientProfiles", new[] { "Id" });
+            DropIndex("dbo.Users", new[] { "Id" });
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
-            DropTable("dbo.ClientProfiles");
+            DropTable("dbo.Users");
         }
     }
 }

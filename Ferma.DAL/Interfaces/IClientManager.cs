@@ -5,6 +5,6 @@ namespace Ferma.DAL.Interfaces
 {
     public interface IClientManager:IDisposable
     {
-        void Create(ClientProfile user);
+        void Create(Users user);
     }
 }

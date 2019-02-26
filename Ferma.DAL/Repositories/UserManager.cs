@@ -4,17 +4,17 @@ using Ferma.DAL.Interfaces;
 
 namespace Ferma.DAL.Repositories
 {
-    public class ClientManager : IClientManager
+    public class UserManager : IClientManager
     {
         public ApplicationContext Database { get; set; }
-        public ClientManager(ApplicationContext db)
+        public UserManager(ApplicationContext db)
         {
             Database = db;
         }
 
-        public void Create(ClientProfile item)
+        public void Create(Users item)
         {
-            Database.ClientProfile.Add(item);
+            Database.Users.Add(item);
             Database.SaveChanges();
         }
 

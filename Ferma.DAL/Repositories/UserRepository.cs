@@ -8,7 +8,7 @@ using Ferma.DAL.Interfaces;
 
 namespace Ferma.DAL.Repositories
 {
-    public class UserRepository : IRepository<ClientProfile>
+    public class UserRepository : IRepository<Users>
     {
         private ApplicationContext db;
 
@@ -18,34 +18,34 @@ namespace Ferma.DAL.Repositories
             db = context;
         }
 
-        public IEnumerable<ClientProfile> GetAll()
+        public IEnumerable<Users> GetAll()
         {
-            return db.ClientProfile;
+            return db.Users;
         }
 
-        public ClientProfile GetID(string id)
+        public Users GetID(string id)
         {
-            return db.ClientProfile.Find(id);
+            return db.Users.Find(id);
         }
 
-        public void Create(ClientProfile user)
+        public void Create(Users user)
         {
-            db.ClientProfile.Add(user);
+            db.Users.Add(user);
         }
 
-        public void Update(ClientProfile user)
+        public void Update(Users user)
         {
             db.Entry(user).State = EntityState.Modified;
         }
-        public IEnumerable<ClientProfile> Find(Func<ClientProfile, Boolean> predicate)
+        public IEnumerable<Users> Find(Func<Users, Boolean> predicate)
         {
-            return db.ClientProfile.Where(predicate).ToList();
+            return db.Users.Where(predicate).ToList();
         }
         public void Delete(string id)
         {
-            ClientProfile user = db.ClientProfile.Find(id);
+            Users user = db.Users.Find(id);
             if (user != null)
-                db.ClientProfile.Remove(user);
+                db.Users.Remove(user);
         }
     }
 }

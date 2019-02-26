@@ -63,20 +63,20 @@
     <Compile Include="EF\ApplicationContext.cs" />
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
-    <Compile Include="Entities\ClientProfile.cs" />
+    <Compile Include="Entities\Users.cs" />
     <Compile Include="Interfaces\IClientManager.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUnitOfWorkAuth.cs" />
-    <Compile Include="Migrations\201902251817012_CreateUsersTable.cs" />
-    <Compile Include="Migrations\201902251817012_CreateUsersTable.Designer.cs">
-      <DependentUpon>201902251817012_CreateUsersTable.cs</DependentUpon>
+    <Compile Include="Migrations\201902261658095_UsersCreate.cs" />
+    <Compile Include="Migrations\201902261658095_UsersCreate.Designer.cs">
+      <DependentUpon>201902261658095_UsersCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Identity\ApplicationRoleManager.cs" />
     <Compile Include="Identity\ApplicationUserManager.cs" />
-    <Compile Include="Repositories\ClientManager.cs" />
+    <Compile Include="Repositories\UserManager.cs" />
     <Compile Include="Repositories\IdentityUnitOfWork.cs" />
     <Compile Include="Repositories\UnitOfWork.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
@@ -88,8 +88,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902251817012_CreateUsersTable.resx">
-      <DependentUpon>201902251817012_CreateUsersTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902261658095_UsersCreate.resx">
+      <DependentUpon>201902261658095_UsersCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

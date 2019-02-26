@@ -21,7 +21,7 @@ namespace Ferma.DAL.Repositories
             db = new ApplicationContext();
             userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(db));
             roleManager = new ApplicationRoleManager(new RoleStore<ApplicationRole>(db));
-            clientManager = new ClientManager(db);
+            clientManager = new UserManager(db);
         }
 
         public ApplicationUserManager UserManager

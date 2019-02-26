@@ -7,13 +7,13 @@ namespace Ferma.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class CreateUsersTable : IMigrationMetadata
+    public sealed partial class UsersCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateUsersTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UsersCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201902251817012_CreateUsersTable"; }
+            get { return "201902261658095_UsersCreate"; }
         }
         
         string IMigrationMetadata.Source

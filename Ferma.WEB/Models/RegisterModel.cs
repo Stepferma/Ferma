@@ -13,6 +13,7 @@ namespace Ferma.Models
         public string Email { get; set; }
         [Required]
         [DataType(DataType.Password)]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$", ErrorMessage = "Пример паролья 'Aaaa1234', длина не меньше 8 и не больше 15")]
         public string Password { get; set; }
         [Required]
         [DataType(DataType.Password)]

@@ -8,6 +8,6 @@ namespace Ferma.DAL.EF
     {
         public ApplicationContext() : base("name=DefaultConnection") { }
 
-        public DbSet<ClientProfile> ClientProfile { get; set; }
+        public DbSet<Users> Users { get; set; }
     }
 }
