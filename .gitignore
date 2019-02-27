@@ -3,3 +3,6 @@
 ################################################################################
 
 /Ferma.WEB/bin
+/Ferma.BLL/bin/Debug
+/Ferma.DAL/bin/Debug
+/Ferma.WEB/obj/Debug
