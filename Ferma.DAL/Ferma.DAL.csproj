@@ -63,7 +63,9 @@
     <Compile Include="EF\ApplicationContext.cs" />
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\Farms.cs" />
     <Compile Include="Entities\Players.cs" />
+    <Compile Include="Entities\Stocks.cs" />
     <Compile Include="Entities\Users.cs" />
     <Compile Include="Interfaces\IClientManager.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
@@ -72,6 +74,14 @@
     <Compile Include="Migrations\201902271414300_Add_class_Player.cs" />
     <Compile Include="Migrations\201902271414300_Add_class_Player.Designer.cs">
       <DependentUpon>201902271414300_Add_class_Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902271424366_Add_class_Farms.cs" />
+    <Compile Include="Migrations\201902271424366_Add_class_Farms.Designer.cs">
+      <DependentUpon>201902271424366_Add_class_Farms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902271427506_Add_class_Stocks.cs" />
+    <Compile Include="Migrations\201902271427506_Add_class_Stocks.Designer.cs">
+      <DependentUpon>201902271427506_Add_class_Stocks.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,6 +101,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201902271414300_Add_class_Player.resx">
       <DependentUpon>201902271414300_Add_class_Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902271424366_Add_class_Farms.resx">
+      <DependentUpon>201902271424366_Add_class_Farms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902271427506_Add_class_Stocks.resx">
+      <DependentUpon>201902271427506_Add_class_Stocks.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
