@@ -63,14 +63,15 @@
     <Compile Include="EF\ApplicationContext.cs" />
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\Players.cs" />
     <Compile Include="Entities\Users.cs" />
     <Compile Include="Interfaces\IClientManager.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUnitOfWorkAuth.cs" />
-    <Compile Include="Migrations\201902261658095_UsersCreate.cs" />
-    <Compile Include="Migrations\201902261658095_UsersCreate.Designer.cs">
-      <DependentUpon>201902261658095_UsersCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201902271414300_Add_class_Player.cs" />
+    <Compile Include="Migrations\201902271414300_Add_class_Player.Designer.cs">
+      <DependentUpon>201902271414300_Add_class_Player.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,8 +89,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902261658095_UsersCreate.resx">
-      <DependentUpon>201902261658095_UsersCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902271414300_Add_class_Player.resx">
+      <DependentUpon>201902271414300_Add_class_Player.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

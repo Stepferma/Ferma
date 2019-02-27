@@ -1,3 +1,17 @@
 C:\Users\fivern\source\repos\Ferma\UserStore.DAL\obj\Debug\Ferma.DAL.Migrations.CreateUsersTable.resources
 C:\Users\fivern\source\repos\Ferma\UserStore.DAL\obj\Debug\Ferma.DAL.csproj.GenerateResource.cache
 C:\Users\fivern\source\repos\Ferma\UserStore.DAL\obj\Debug\Ferma.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\Ferma.DAL.dll.config
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\Ferma.DAL.dll
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\Ferma.DAL.pdb
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\EntityFramework.dll
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\EntityFramework.xml
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csprojResolveAssemblyReference.cache
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.dll
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.pdb
