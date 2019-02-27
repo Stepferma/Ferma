@@ -71,14 +71,14 @@
     <Compile Include="Entities\Products.cs" />
     <Compile Include="Entities\Stocks.cs" />
     <Compile Include="Entities\TypeBuildings.cs" />
-    <Compile Include="Entities\Users.cs" />
+    <Compile Include="Entities\UsersProfiles.cs" />
     <Compile Include="Interfaces\IClientManager.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUnitOfWorkAuth.cs" />
-    <Compile Include="Migrations\201902271752576_GLOBAL_MIGRATIONS_ENTITIES.cs" />
-    <Compile Include="Migrations\201902271752576_GLOBAL_MIGRATIONS_ENTITIES.Designer.cs">
-      <DependentUpon>201902271752576_GLOBAL_MIGRATIONS_ENTITIES.cs</DependentUpon>
+    <Compile Include="Migrations\201902271907336_GLOBAL_UPDATE_MIGRATION.cs" />
+    <Compile Include="Migrations\201902271907336_GLOBAL_UPDATE_MIGRATION.Designer.cs">
+      <DependentUpon>201902271907336_GLOBAL_UPDATE_MIGRATION.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,8 +96,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902271752576_GLOBAL_MIGRATIONS_ENTITIES.resx">
-      <DependentUpon>201902271752576_GLOBAL_MIGRATIONS_ENTITIES.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902271907336_GLOBAL_UPDATE_MIGRATION.resx">
+      <DependentUpon>201902271907336_GLOBAL_UPDATE_MIGRATION.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,7 +10,7 @@ namespace Ferma.DAL.Entities
     public class Fields
     {
         [Key]
-        public int? IdField { get; set; }
+        public int IdField { get; set; }
         public int? IdBuilding { get; set; }
         public int? IdFarm { get; set; }
     }

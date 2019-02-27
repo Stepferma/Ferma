@@ -28,7 +28,7 @@ namespace Ferma.DAL.Repositories
             db = new ApplicationContext();
             userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(db));
         }
-        public IRepository<Users> Users
+        public IRepository<UsersProfiles> Users
         {
             get
             {

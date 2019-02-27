@@ -12,9 +12,9 @@ namespace Ferma.DAL.Repositories
             Database = db;
         }
 
-        public void Create(Users item)
+        public void Create(UsersProfiles item)
         {
-            Database.Users.Add(item);
+            Database.UsersProfiles.Add(item);
             Database.SaveChanges();
         }
 

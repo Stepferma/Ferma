@@ -6,7 +6,7 @@ namespace Ferma.DAL.Interfaces
     public interface IUnitOfWork
     {
         ApplicationUserManager UserManager { get; }
-        IRepository<Users> Users { get; }     
+        IRepository<UsersProfiles> Users { get; }     
         void Save();
         void Dispose();
     }

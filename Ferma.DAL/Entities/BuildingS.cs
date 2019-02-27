@@ -10,7 +10,7 @@ namespace Ferma.DAL.Entities
     public class Buildings
     {
         [Key]
-        public int? IdBuilding { get; set; }
+        public int IdBuilding { get; set; }
         public int? IdTypeBuilding { get; set; }
         public bool? IsActive { get; set; }
         public DateTime? DateStart { get; set; }

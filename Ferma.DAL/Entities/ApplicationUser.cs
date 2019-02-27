@@ -4,6 +4,6 @@ namespace Ferma.DAL.Entities
 {
     public class ApplicationUser : IdentityUser
     {
-        public virtual Users Users { get; set; }
+        public virtual UsersProfiles Users { get; set; }
     }
 }

@@ -24,7 +24,7 @@ namespace Ferma.BLL.Services
             if (user == null)
             {
                 user = new ApplicationUser { UserName = userDTO.UserName, Email = userDTO.Email, PasswordHash = userDTO.Password};
-                Users Client = new Users
+                UsersProfiles Client = new UsersProfiles
                 {
                     UserName = userDTO.UserName,
                     ApplicationUser = user,
@@ -43,8 +43,10 @@ namespace Ferma.BLL.Services
 
         public IEnumerable<UserDTO> GetList()
         {
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<Users, UserDTO>()).CreateMapper();
-            return mapper.Map<IEnumerable<Users>, List<UserDTO>>(Database.Users.GetAll());
+            var asd = Database.Users.GetAll();
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<UsersProfiles, UserDTO>()).CreateMapper();
+            var users = mapper.Map<IEnumerable<UsersProfiles>, List<UserDTO>>(Database.Users.GetAll());
+            return users;
         }
 
         public UserDTO GetID(string id)

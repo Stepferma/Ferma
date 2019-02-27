@@ -40,6 +40,6 @@ C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.CoreComp
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.CopyComplete
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.pdb
-C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.GLOBAL_MIGRATIONS_ENTITIES.resources
-C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.GenerateResource.cache
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csprojAssemblyReference.cache
+C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.GLOBAL_UPDATE_MIGRATION.resources
+C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.GenerateResource.cache
