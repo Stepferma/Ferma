@@ -22,11 +22,11 @@ namespace Ferma.BLL.Services
 
         public async Task<OperationDetails> Create(UserDTO userDto)
         {
-            ApplicationUser user = await Database.UserManager.FindByEmailAsync(userDto.Email);
+            ApplicationUser user = Database.UserManager.FindByEmail(userDto.Email);
             if (user == null)
             {
                 user = new ApplicationUser { Email = userDto.Email, UserName = userDto.UserName, PasswordHash = userDto.Password};
-                await Database.UserManager.CreateAsync(user, userDto.Password);
+                Database.UserManager.Create(user, userDto.Password);
 
                 // await Database.UserManager.AddToRoleAsync(user.Id, userDto.Role);
 

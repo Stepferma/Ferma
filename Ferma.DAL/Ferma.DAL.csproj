@@ -71,47 +71,14 @@
     <Compile Include="Entities\Products.cs" />
     <Compile Include="Entities\Stocks.cs" />
     <Compile Include="Entities\TypeBuildings.cs" />
-    <Compile Include="Entities\TypeProducts.cs" />
     <Compile Include="Entities\Users.cs" />
     <Compile Include="Interfaces\IClientManager.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUnitOfWorkAuth.cs" />
-    <Compile Include="Migrations\201902271414300_Add_class_Player.cs" />
-    <Compile Include="Migrations\201902271414300_Add_class_Player.Designer.cs">
-      <DependentUpon>201902271414300_Add_class_Player.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902271424366_Add_class_Farms.cs" />
-    <Compile Include="Migrations\201902271424366_Add_class_Farms.Designer.cs">
-      <DependentUpon>201902271424366_Add_class_Farms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902271427506_Add_class_Stocks.cs" />
-    <Compile Include="Migrations\201902271427506_Add_class_Stocks.Designer.cs">
-      <DependentUpon>201902271427506_Add_class_Stocks.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902271434130_Add_class_Fields.cs" />
-    <Compile Include="Migrations\201902271434130_Add_class_Fields.Designer.cs">
-      <DependentUpon>201902271434130_Add_class_Fields.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902271440325_Add_class_Buildings.cs" />
-    <Compile Include="Migrations\201902271440325_Add_class_Buildings.Designer.cs">
-      <DependentUpon>201902271440325_Add_class_Buildings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902271445597_Add_class_TypeBuildings.cs" />
-    <Compile Include="Migrations\201902271445597_Add_class_TypeBuildings.Designer.cs">
-      <DependentUpon>201902271445597_Add_class_TypeBuildings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902271454151_Add_class_Cells.cs" />
-    <Compile Include="Migrations\201902271454151_Add_class_Cells.Designer.cs">
-      <DependentUpon>201902271454151_Add_class_Cells.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902271457128_Add_class_Products.cs" />
-    <Compile Include="Migrations\201902271457128_Add_class_Products.Designer.cs">
-      <DependentUpon>201902271457128_Add_class_Products.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902271500188_Add_class_TypeProducts.cs" />
-    <Compile Include="Migrations\201902271500188_Add_class_TypeProducts.Designer.cs">
-      <DependentUpon>201902271500188_Add_class_TypeProducts.cs</DependentUpon>
+    <Compile Include="Migrations\201902271752576_GLOBAL_MIGRATIONS_ENTITIES.cs" />
+    <Compile Include="Migrations\201902271752576_GLOBAL_MIGRATIONS_ENTITIES.Designer.cs">
+      <DependentUpon>201902271752576_GLOBAL_MIGRATIONS_ENTITIES.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,32 +96,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902271414300_Add_class_Player.resx">
-      <DependentUpon>201902271414300_Add_class_Player.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902271424366_Add_class_Farms.resx">
-      <DependentUpon>201902271424366_Add_class_Farms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902271427506_Add_class_Stocks.resx">
-      <DependentUpon>201902271427506_Add_class_Stocks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902271434130_Add_class_Fields.resx">
-      <DependentUpon>201902271434130_Add_class_Fields.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902271440325_Add_class_Buildings.resx">
-      <DependentUpon>201902271440325_Add_class_Buildings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902271445597_Add_class_TypeBuildings.resx">
-      <DependentUpon>201902271445597_Add_class_TypeBuildings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902271454151_Add_class_Cells.resx">
-      <DependentUpon>201902271454151_Add_class_Cells.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902271457128_Add_class_Products.resx">
-      <DependentUpon>201902271457128_Add_class_Products.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902271500188_Add_class_TypeProducts.resx">
-      <DependentUpon>201902271500188_Add_class_TypeProducts.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902271752576_GLOBAL_MIGRATIONS_ENTITIES.resx">
+      <DependentUpon>201902271752576_GLOBAL_MIGRATIONS_ENTITIES.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
