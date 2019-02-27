@@ -47,18 +47,16 @@ namespace Ferma.DAL.Migrations
                         IdFarm = c.Int(),
                     })
                 .PrimaryKey(t => t.IdField);
-            
+
             CreateTable(
-                "dbo.Players",
-                c => new
+                    "dbo.Players",
+                    c => new
                     {
                         IdPlayer = c.Int(nullable: false, identity: true),
                         Money = c.Int(nullable: false),
                         IdUser = c.String(maxLength: 128),
                     })
-                .PrimaryKey(t => t.IdPlayer)
-                .ForeignKey("dbo.Users", t => t.IdUser)
-                .Index(t => t.IdUser);
+                .PrimaryKey(t => t.IdPlayer);
             
             CreateTable(
                 "dbo.Products",

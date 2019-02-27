@@ -14,7 +14,5 @@ namespace Ferma.DAL.Entities
         public int? IdPlayer { get; set; }
         public int Money { get; set; }
         public string IdUser { get; set; }
-        [ForeignKey("IdUser")]
-        public virtual Users User { get; set; }
     }
 }
