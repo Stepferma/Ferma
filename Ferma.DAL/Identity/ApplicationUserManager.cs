@@ -6,7 +6,7 @@ namespace Ferma.DAL.Identity
 {
     public class ApplicationUserManager : UserManager<ApplicationUser>
     {
-        public ApplicationUserManager(UserStore<ApplicationUser> store)
+        public ApplicationUserManager(IUserStore<ApplicationUser> store)
                 : base(store)
         {
         }

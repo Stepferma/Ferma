@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using System.Security.Claims;
 using Ferma.BLL.Interfaces;
-using Ferma.DAL.Interfaces;
 using System.Collections.Generic;
+using Ferma.DAL.Interfaces;
 
 namespace Ferma.BLL.Services
 {
@@ -22,11 +22,11 @@ namespace Ferma.BLL.Services
 
         public async Task<OperationDetails> Create(UserDTO userDto)
         {
-            ApplicationUser user = Database.UserManager.FindByEmail(userDto.Email);
+            var user = await Database.UserManager.FindByEmailAsync(userDto.Email);
             if (user == null)
             {
                 user = new ApplicationUser { Email = userDto.Email, UserName = userDto.UserName, PasswordHash = userDto.Password};
-                Database.UserManager.Create(user, userDto.Password);
+                await Database.UserManager.CreateAsync(user, userDto.Password);
 
                 // await Database.UserManager.AddToRoleAsync(user.Id, userDto.Role);
 
