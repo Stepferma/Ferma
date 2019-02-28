@@ -17,5 +17,6 @@ namespace Ferma.DAL.EF
         public DbSet<TypeBuildings> TypeBuildings { get; set; }
         public DbSet<Cells> Cells { get; set; }
         public DbSet<Products> Products { get; set; }
+        public DbSet<TypeProducts> TypeProducts { get; set; }
     }
 }

@@ -71,8 +71,10 @@
     <Compile Include="Entities\Products.cs" />
     <Compile Include="Entities\Stocks.cs" />
     <Compile Include="Entities\TypeBuildings.cs" />
+    <Compile Include="Entities\TypeProducts.cs" />
     <Compile Include="Entities\UsersProfiles.cs" />
     <Compile Include="Interfaces\IClientManager.cs" />
+    <Compile Include="Interfaces\IRepositoryEntity.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUnitOfWorkAuth.cs" />
@@ -80,10 +82,15 @@
     <Compile Include="Migrations\201902271907336_GLOBAL_UPDATE_MIGRATION.Designer.cs">
       <DependentUpon>201902271907336_GLOBAL_UPDATE_MIGRATION.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902281359378_Add_class_TypeProducts.cs" />
+    <Compile Include="Migrations\201902281359378_Add_class_TypeProducts.Designer.cs">
+      <DependentUpon>201902281359378_Add_class_TypeProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Identity\ApplicationRoleManager.cs" />
     <Compile Include="Identity\ApplicationUserManager.cs" />
+    <Compile Include="Repositories\PlayerRepository.cs" />
     <Compile Include="Repositories\UserManager.cs" />
     <Compile Include="Repositories\IdentityUnitOfWork.cs" />
     <Compile Include="Repositories\UnitOfWork.cs" />
@@ -98,6 +105,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201902271907336_GLOBAL_UPDATE_MIGRATION.resx">
       <DependentUpon>201902271907336_GLOBAL_UPDATE_MIGRATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902281359378_Add_class_TypeProducts.resx">
+      <DependentUpon>201902281359378_Add_class_TypeProducts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

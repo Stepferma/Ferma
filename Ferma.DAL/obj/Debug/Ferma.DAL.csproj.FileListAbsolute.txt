@@ -15,16 +15,7 @@ C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\bin\Debug\Microsoft
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csprojResolveAssemblyReference.cache
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.dll
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.pdb
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_Player.resources
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.GenerateResource.Cache
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_Farms.resources
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_Stocks.resources
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_Fields.resources
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_Buildings.resources
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_TypeBuildings.resources
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_Cells.resources
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_Products.resources
-C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_TypeProducts.resources
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\bin\Debug\Ferma.DAL.dll.config
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\bin\Debug\Ferma.DAL.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\bin\Debug\Ferma.DAL.pdb
@@ -43,3 +34,5 @@ C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.pdb
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csprojAssemblyReference.cache
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.GLOBAL_UPDATE_MIGRATION.resources
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.GenerateResource.cache
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.GLOBAL_UPDATE_MIGRATION.resources
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_TypeProducts.resources
