@@ -5,17 +5,15 @@
 }
 
 <h2 class="text-center text-info">Регистрация</h2>
-<div class="regForm border border-light d-flex justify-content-center w-50 text-center " >
-
-    @using (Html.BeginForm())
+    @using (Ajax.BeginForm("Register", new AjaxOptions {UpdateTargetId = "dialogContent" }))
     {
         @Html.AntiForgeryToken()
 
-        <div class="form-horizontal ">
+        <div class="d-flex form-horizontal p-lg-5 justify-content-md-center flex-md-column">
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
           
             <div class="form-group row">
-                <label for="Email" class="col-sm-4 col-form-label">Email</label>
+                @Html.LabelFor(model => model.Email,"Email", htmlAttributes: new { @class = "col-md-4" })
                 <div class="col-sm-10">
                     @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
@@ -23,7 +21,7 @@
             </div>    
 
             <div class="form-group row">
-                <label for="password" class="col-sm-4 col-form-label">Пароль</label>
+                @Html.LabelFor(model => model.Password,"Пароль", htmlAttributes: new { @class = "col-md-4" })
                 <div class="col-sm-10">
                     @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
@@ -31,16 +29,16 @@
             </div>
 
             <div class="form-group row">
-                <label for="ConfirmPassword" class="col-sm-4 col-form-label">Подтвердите</label>
+                @Html.LabelFor(model => model.ConfirmPassword,"Повторить пароль", htmlAttributes: new { @class = "col-md-10" })
                 <div class="col-sm-10">
-                @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                    @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
                 </div>
             </div>
 
          
             <div class="form-group row">
-                <label for="Login" class="col-sm-4 col-form-label">Имя</label>
+                @Html.LabelFor(model => model.Name,"Логин", htmlAttributes: new { @class = "col-md-4" })
                 <div class="col-sm-10">
                     @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
@@ -50,9 +48,9 @@
 
             <div class="form-group text-center">
                 <div class="col-md-offset-2 col-md-10">
-                    <button type="submit" class="btn btn-success">Регистрация</button>
+                    <input type="submit" value="Регистрация" class="btn btn-success openModal" />
                 </div>
             </div>
         </div>
     }
-</div>
+

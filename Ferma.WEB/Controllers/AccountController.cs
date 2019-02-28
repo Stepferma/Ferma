@@ -30,6 +30,12 @@ namespace Ferma.Controllers
             }
         }
 
+        public ActionResult Index()
+        {
+
+            return View();
+        }
+
         public ActionResult Login()
         {
             return View();
@@ -54,7 +60,7 @@ namespace Ferma.Controllers
                     {
                         IsPersistent = true
                     }, claim);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index");
                 }
             }
             return View(model);
@@ -63,7 +69,7 @@ namespace Ferma.Controllers
         public ActionResult Logout()
         {
             AuthenticationManager.SignOut();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index");
         }
 
         public ActionResult Register()
@@ -85,11 +91,11 @@ namespace Ferma.Controllers
                 };
                 OperationDetails operationDetails = await UserServiceAuth.Create(userDto);
                 if (operationDetails.Succedeed)
-                    return View("SuccessRegister");
+                    return PartialView("SuccessRegister");
                 else
                     ModelState.AddModelError(operationDetails.Property, operationDetails.Message);
             }
-            return View(model);
+            return PartialView(model);
         }
        
     }

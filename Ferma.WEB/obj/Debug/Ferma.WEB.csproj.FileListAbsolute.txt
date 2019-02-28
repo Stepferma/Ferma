@@ -159,3 +159,5 @@ C:\Users\fivern\source\repos\Ferma\Ferma.WEB\obj\Debug\Ferma.WEB.csproj.CoreComp
 C:\Users\fivern\source\repos\Ferma\Ferma.WEB\obj\Debug\Ferma.WEB.csproj.CopyComplete
 C:\Users\fivern\source\repos\Ferma\Ferma.WEB\obj\Debug\Ferma.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.WEB\obj\Debug\Ferma.pdb
+C:\Users\fivern\Source\Repos\Ferma\Ferma.WEB\bin\ru\EntityFramework.resources.dll
+C:\Users\fivern\Source\Repos\Ferma\Ferma.WEB\bin\ru\EntityFramework.SqlServer.resources.dll
