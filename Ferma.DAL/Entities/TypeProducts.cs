@@ -10,11 +10,11 @@ namespace Ferma.DAL.Entities
     public class TypeProducts
     {
         [Key]
-        public int IdTypeProduct { get; set; }
-        [StringLength(40)]
+        public int IdTypeProducts { get; set; }
+        [StringLength(30)]
         public string Name { get; set; }
         public int Price { get; set; }
-        public bool IsActive { get; set; }
         public DateTime BuildTime { get; set; }
+        public bool IsActive { get; set; } 
     }
 }
