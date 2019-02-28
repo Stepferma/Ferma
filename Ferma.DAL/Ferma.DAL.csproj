@@ -90,7 +90,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Identity\ApplicationRoleManager.cs" />
     <Compile Include="Identity\ApplicationUserManager.cs" />
+    <Compile Include="Repositories\BuildingRepository.cs" />
+    <Compile Include="Repositories\FarmRepository.cs" />
     <Compile Include="Repositories\PlayerRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\StockRepository.cs" />
     <Compile Include="Repositories\UserManager.cs" />
     <Compile Include="Repositories\IdentityUnitOfWork.cs" />
     <Compile Include="Repositories\UnitOfWork.cs" />
