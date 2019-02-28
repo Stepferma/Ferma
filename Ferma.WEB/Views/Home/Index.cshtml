@@ -1,9 +1,13 @@
-﻿@using Ferma.Models
-@model List<UserViewModel>
+﻿<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalReg">
+    Регистрация
+</button>
 
-@foreach (UserViewModel user in Model)
-{
-    <h2>@user.UserName</h2>
-    <h3>@user.Email</h3>
-    <br>
-}
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        
+        </div>
+    </div>
+</div>
