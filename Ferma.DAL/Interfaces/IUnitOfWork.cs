@@ -12,6 +12,10 @@ namespace Ferma.DAL.Interfaces
         IRepositoryEntity<Buildings> Buildings { get; }
         IRepositoryEntity<Products> Products { get; }
         IRepositoryEntity<Stocks> Stocks { get; }
+        IRepositoryEntity<Cells> Cells { get; }
+        IRepositoryEntity<Fields> Fields { get; }
+        IRepositoryEntity<TypeProducts> TypeProducts { get; }
+        IRepositoryEntity<TypeBuildings> TypeBuildings { get; }
         void Save();
         void Dispose();
     }

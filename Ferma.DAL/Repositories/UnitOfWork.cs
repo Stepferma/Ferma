@@ -21,7 +21,10 @@ namespace Ferma.DAL.Repositories
         private BuildingRepository buildingRepository;
         private ProductRepository productRepository;
         private StockRepository stockRepository;
-
+        private CellRepository cellRepository;
+        private FieldRepository fieldRepository;
+        private TypeProductsRepository typeProductsRepository;
+        private TypeBuildingsRepository typeBuildingsRepository;
 
         public ApplicationUserManager UserManager
         {
@@ -90,6 +93,46 @@ namespace Ferma.DAL.Repositories
                 if (stockRepository == null)
                     stockRepository = new StockRepository(db);
                 return stockRepository;
+            }
+        }
+
+        public IRepositoryEntity<Cells> Cells
+        {
+            get
+            {
+                if (cellRepository == null)
+                    cellRepository = new CellRepository(db);
+                return cellRepository;
+            }
+        }
+
+        public IRepositoryEntity<Fields> Fields
+        {
+            get
+            {
+                if (fieldRepository == null)
+                    fieldRepository = new FieldRepository(db);
+                return fieldRepository;
+            }
+        }
+
+        public IRepositoryEntity<TypeProducts> TypeProducts
+        {
+            get
+            {
+                if (typeProductsRepository == null)
+                    typeProductsRepository = new TypeProductsRepository(db);
+                return typeProductsRepository;
+            }
+        }
+
+        public IRepositoryEntity<TypeBuildings> TypeBuildings
+        {
+            get
+            {
+                if (typeBuildingsRepository == null)
+                    typeBuildingsRepository = new TypeBuildingsRepository(db);
+                return typeBuildingsRepository;
             }
         }
 

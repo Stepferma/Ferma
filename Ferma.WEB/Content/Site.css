@@ -24,8 +24,106 @@ textarea {
 }
 
 .farmhead {
-    background: url("../Images/Background/Background_test.png") no-repeat fixed;
+    background: url("../Images/Background/Background.png") no-repeat fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+.nameplate {
+    background: url("../Images/Background/nameplate.png") no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+    color: burlywood;
+    z-index: 1;
+}
+
+    .nameplate img {
+        margin-left: 40px;
+        margin-right: 35px;
+        width: 30px;
+        height: 40px;
+    }
+
+.farm {
+    width: 44%;
+    height: 44%;
+    margin-left: 27.9%;
+    margin-top: 12.3%;
+}
+
+.field {
+    display: inline-block;
+    background: url(../Images/Vegetable/Field/Field.png) no-repeat;
+    background-size: contain;
+    width: 32%;
+    height: 31.8%;
+    opacity: 0.7;
+}
+
+.field:hover {
+    opacity: 1;
+}
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover {
+    -webkit-animation: swing 0.6s ease;
+    animation: swing 0.6s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
