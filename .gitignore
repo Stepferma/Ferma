@@ -12,3 +12,4 @@
 .vs/Ferma/v15/Server/sqlite3
 /Ferma.BLL/obj/Release
 /Ferma.DAL/obj/Release
+/Ferma.DAL/obj/Debug
