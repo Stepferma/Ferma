@@ -9,11 +9,19 @@ using Ferma.BLL.DTO;
 using System.Security.Claims;
 using Ferma.BLL.Interfaces;
 using Ferma.BLL.Infrastructure;
+using Microsoft.AspNet.Identity;
 
 namespace Ferma.Controllers
 {
+
     public class AccountController : Controller
     {
+        private IService<UserDTO> userService;
+
+        public AccountController(IService<UserDTO> service)
+        {
+            userService = service;
+        }
         private IUserServiceAuth UserServiceAuth
         {
             get
@@ -60,7 +68,12 @@ namespace Ferma.Controllers
                     {
                         IsPersistent = true
                     }, claim);
-                    return RedirectToAction("Index");
+                    userDto = userService.GetID(User.Identity.GetUserId());
+                    if (userDto == null)
+                    {
+                        userService.Create(userDto);
+                    }
+                    return RedirectToAction("Index", "Farm");
                 }
             }
             return View(model);

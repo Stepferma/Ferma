@@ -16,7 +16,12 @@ namespace Ferma.DAL.Repositories
         private ApplicationContext db;
         private UserRepository userRepository;
         private ApplicationUserManager userManager;
-       
+        private FarmRepository farmRepository;
+        private PlayerRepository playerRepository;
+        private BuildingRepository buildingRepository;
+        private ProductRepository productRepository;
+        private StockRepository stockRepository;
+
 
         public ApplicationUserManager UserManager
         {
@@ -37,7 +42,57 @@ namespace Ferma.DAL.Repositories
                 return userRepository;
             }
         }
-       
+
+        public IRepositoryEntity<Farms> Farms
+        {
+            get
+            {
+                if (farmRepository == null)
+                    farmRepository = new FarmRepository(db);
+                return farmRepository;
+            }
+        }
+
+        public IRepositoryEntity<Players> Players
+        {
+            get
+            {
+                if (playerRepository == null)
+                    playerRepository = new PlayerRepository(db);
+                return playerRepository;
+            }
+        }
+
+        public IRepositoryEntity<Buildings> Buildings
+        {
+            get
+            {
+                if (buildingRepository == null)
+                    buildingRepository = new BuildingRepository(db);
+                return buildingRepository;
+            }
+        }
+
+        public IRepositoryEntity<Products> Products
+        {
+            get
+            {
+                if (productRepository == null)
+                    productRepository = new ProductRepository(db);
+                return productRepository;
+            }
+        }
+
+        public IRepositoryEntity<Stocks> Stocks
+        {
+            get
+            {
+                if (stockRepository == null)
+                    stockRepository = new StockRepository(db);
+                return stockRepository;
+            }
+        }
+
         public void Save()
         {
             db.SaveChanges();

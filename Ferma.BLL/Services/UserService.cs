@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Ferma.BLL.DTO;
@@ -18,27 +19,33 @@ namespace Ferma.BLL.Services
         {
             Database = uow;
         }
-        public async Task<OperationDetails> Create(UserDTO userDTO)
+        public async void Create(UserDTO userDTO)
         {
             ApplicationUser user = await Database.UserManager.FindByEmailAsync(userDTO.Email);
-            if (user == null)
+            if (user != null)
             {
-                user = new ApplicationUser { UserName = userDTO.UserName, Email = userDTO.Email, PasswordHash = userDTO.Password};
                 UsersProfiles Client = new UsersProfiles
                 {
                     UserName = userDTO.UserName,
                     ApplicationUser = user,
+                    Password = userDTO.Password,
+                    Email = user.Email,
                     Id = user.Id
                 };
                 Database.Users.Create(Client);
-                Database.Save();
-                return new OperationDetails(true, "Регистрация успешно пройдена", "");
-
-            }
-            else
-            {
-                return new OperationDetails(false, "Пользователь с таким логином уже существует", "Email");
-            }
+                Players player = new Players { IdUser = user.Id, Money = 500 };
+                Database.Players.Create(player);
+                player = Database.Players.Find(i => i.IdUser == user.Id).FirstOrDefault();
+                Stocks stock = new Stocks { Eggs = 0, Grass = 0, Pork = 0, Seed = 0 , IdPlayer = player.IdPlayer};
+                Database.Stocks.Create(stock);
+                stock = Database.Stocks.Find(i => i.IdPlayer == player.IdPlayer).FirstOrDefault();
+                Farms farm = new Farms {IdPlayer = player.IdPlayer, IdStock = stock.IdStock};
+                Database.Farms.Create(farm);
+                farm = Database.Farms.Find(i => i.IdPlayer == player.IdPlayer).FirstOrDefault();
+                Fields field = new Fields {IdBuilding = 0, IdFarm = farm.IdFarm};
+                Database.f
+                Database.Save();              
+            } 
         }
 
         public IEnumerable<UserDTO> GetList()

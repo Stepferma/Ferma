@@ -29,9 +29,7 @@ namespace Ferma.BLL.Services
                 await Database.UserManager.CreateAsync(user, userDto.Password);
 
                 // await Database.UserManager.AddToRoleAsync(user.Id, userDto.Role);
-
-                UsersProfiles clientProfile = new UsersProfiles { ApplicationUser = user,Id = user.Id, UserName = userDto.UserName, Password = userDto.Password, Email = userDto.Email};
-                Database.ClientManager.Create(clientProfile);
+                
                 await Database.SaveAsync();
                 return new OperationDetails(true, "Регистрация успешно пройдена", "");
 

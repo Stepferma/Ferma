@@ -10,3 +10,5 @@
 /packages/popper.js.1.14.0/popper.js.1.14.0.nupkg
 .vs
 .vs/Ferma/v15/Server/sqlite3
+/Ferma.BLL/obj/Release
+/Ferma.DAL/obj/Release

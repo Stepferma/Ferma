@@ -1,8 +1,6 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background: url(../Images/Background/IndexBackground.jpg) no-repeat fixed center;
-    background-size: cover;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,4 +21,11 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.farmhead {
+    background: url("../Images/Background/Background_test.png") no-repeat fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
