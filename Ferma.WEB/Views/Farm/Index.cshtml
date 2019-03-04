@@ -1,50 +1,49 @@
 ﻿@model Ferma.Models.UserViewModel
 @Styles.Render("~/Content/css")
-<body class="farmhead">
-    <nav class="navbar navbar-expand-lg">
-        <div class="navbar-collapse collapse d-flex justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nameplate">
-                    <img src="/Images/Vegetable/Corn/Corn.png">
-                    0
-                </li>
-                <li class="nameplate">
-                    <img src="/Images/Vegetable/Grain/Grain.png">
-                    0
-                </li>
-                <li class="nameplate">
-                    <img src="/Images/Vegetable/HotPepper/HotPepper.png">
-                    0
-                </li>
-                <li class="nameplate">
-                    <img src="/Images/Vegetable/Brocolli/Broccoli.png">
-                    0
-                </li>
-                <li class="nameplate">
-                    <img src="/Images/Background/coin.png">
-                    500
-                </li>
-            </ul>
+<body class="farmbody">
+    <div class="farmhead">
+        <div class="nameplate">
+            <img src="/Images/Vegetable/Corn/Corn.png">
+            <h4>0</h4>
         </div>
-    </nav>
-    <div>
-        <h1>@Model.UserName</h1>
+        <div class="nameplate">
+            <img src="/Images/Vegetable/Grain/Grain.png">
+            <h4>0</h4>
+        </div>
+        <div class="nameplate">
+            <img src="/Images/Vegetable/HotPepper/HotPepper.png">
+            <h4>0</h4>
+        </div>
+        <div class="nameplate">
+            <img src="/Images/Vegetable/Brocolli/Broccoli.png">
+            <h4>0</h4>
+        </div>
+        <div class="nameplate">
+            <img src="/Images/Background/coin.png">
+            <h4>550</h4>
+        </div>
+
     </div>
-    <img class="swing" src="/Images/Props/Toilette.png" style="position: absolute; margin-top: 20%; margin-left: 80%; width: 15%;">
-    <img  class="swing" src="/Images/Props/Scarecrow.png" style="position: absolute;margin-left: 50%; margin-top: -5%; width: 15%;">
-    <img class="swing" src="/Images/Props/Well.png" style="position: absolute;margin-left: 10%;margin-top: 30%;width: 15%;">
-    <!--<img src="/Images/Props/BirdHouse.png" style="width: 5%;position: absolute;margin-left: 75%;">-->
-    <img class="swing" src="~/Images/Props/Pond/Pond_Complete.png" style="position: absolute;margin-top: -10%; width: 40%;" />
-    <img class="swing" src="~/Images/Props/Bench_1.png" style="position: absolute;margin-left: 76%;margin-top: -9%; width: 20%;" />
-    <img class="swing" src="~/Images/Props/Fireplace_Fire.png" style="position: absolute;margin-left: 74%;width: 7%;margin-top: 6%;" />
-    <img src="~/Images/Props/Road_1.png" style="position: absolute;margin-left: 72%;margin-top: 35%;width: 15%;"/>
-<div class="farm">
-        <div class="field"></div>
-        <div class="field"></div>
-        <div class="field"></div>
-        <div class="field"></div>
-        <div class="field"></div>
-        <div class="field"></div>
+    <div class="farmcontent">
+        <div>
+            <h1>@Model.UserName</h1>
+        </div>
+        <img class="swing" src="/Images/Props/Toilette.png" style="position: absolute; margin-top: 20%; margin-left: 80%; width: 15%;">
+        <img class="swing" src="/Images/Props/Scarecrow.png" style="position: absolute;margin-left: 50%; margin-top: -5%; width: 15%;">
+        <img class="swing" src="/Images/Props/Well.png" style="position: absolute;margin-left: 10%;margin-top: 30%;width: 15%;">
+        <!--<img src="/Images/Props/BirdHouse.png" style="width: 5%;position: absolute;margin-left: 75%;">-->
+        <img class="swing" src="~/Images/Props/Pond/Pond_Complete.png" style="position: absolute;margin-top: -10%; width: 40%;" />
+        <img class="swing" src="~/Images/Props/Bench_1.png" style="position: absolute;margin-left: 76%;margin-top: -9%; width: 20%;" />
+        <img class="swing" src="~/Images/Props/Fireplace_Fire.png" style="position: absolute;margin-left: 74%;width: 7%;margin-top: 6%;" />
+        <img src="~/Images/Props/Road_1.png" style="position: absolute;margin-left: 72%;margin-top: 35%;width: 15%;" />
+        <div class="farm">
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+        </div>
     </div>
 </body>
 @Scripts.Render("~/bundles/jquery")

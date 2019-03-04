@@ -22,30 +22,49 @@ select,
 textarea {
     max-width: 280px;
 }
-
 .farmhead {
-    background: url("../Images/Background/Background.png") no-repeat fixed;
+    margin-left: 20%; 
+    margin-right: 20%;
+    margin-top: 40%;
+    z-index: 1;
+    position: fixed;
+    width: 60%; 
+    height: 100%;
+}
+.farmbody {
+    background: url("../Images/Background/Background.png") no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
 }
+.farmcontent {
+    margin-top: 10%;
+}
 
 .nameplate {
-    background: url("../Images/Background/nameplate.png") no-repeat;
+    display: inline-block;
+    background: url(../Images/Background/nameplate.png) no-repeat;
     background-size: cover;
-    width: 200px;
-    height: 100px;
-    padding-top: 30px;
+    padding-top: 1%;
+    width: 19.5%;
+    height: 12%;
     color: burlywood;
     z-index: 1;
 }
 
     .nameplate img {
-        margin-left: 40px;
-        margin-right: 35px;
-        width: 30px;
-        height: 40px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 10%;
+        width: 20%;
+        height: 50%;
     }
+
+.nameplate h4 {
+    margin-top: -16%;
+    margin-left: 50%;
+    font-size: 150%;
+}
 
 .farm {
     width: 44%;

@@ -42,7 +42,6 @@ namespace Ferma.Controllers
 
         public ActionResult Index()
         {
-
             return View();
         }
 
