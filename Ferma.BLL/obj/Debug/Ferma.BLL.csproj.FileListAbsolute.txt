@@ -45,6 +45,8 @@ C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.BLL\bin\Debug\System.Va
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.csprojResolveAssemblyReference.cache
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.dll
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.pdb
+C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.csprojAssemblyReference.cache
+C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.csproj.CoreCompileInputs.cache
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Ferma.BLL.dll.config
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Ferma.BLL.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Ferma.BLL.pdb
@@ -66,8 +68,6 @@ C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Microsoft.AspNet.Identity
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Ninject.xml
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\System.ValueTuple.xml
-C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.csprojAssemblyReference.cache
-C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.csproj.CoreCompileInputs.cache
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.csproj.CopyComplete
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.pdb
