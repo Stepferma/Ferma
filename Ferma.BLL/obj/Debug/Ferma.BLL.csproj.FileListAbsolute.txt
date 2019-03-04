@@ -54,7 +54,6 @@ C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\AutoMapper.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\EntityFramework.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Ferma.DAL.dll
-C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Ninject.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\System.ValueTuple.dll
@@ -71,3 +70,5 @@ C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\System.ValueTuple.xml
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.csproj.CopyComplete
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.BLL\obj\Debug\Ferma.BLL.pdb
+C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fivern\source\repos\Ferma\Ferma.BLL\bin\Debug\Newtonsoft.Json.xml
