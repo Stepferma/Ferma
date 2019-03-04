@@ -161,3 +161,5 @@ C:\Users\fivern\source\repos\Ferma\Ferma.WEB\bin\ru\EntityFramework.SqlServer.re
 C:\Users\fivern\source\repos\Ferma\Ferma.WEB\obj\Debug\Ferma.WEB.csproj.CopyComplete
 C:\Users\fivern\source\repos\Ferma\Ferma.WEB\obj\Debug\Ferma.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.WEB\obj\Debug\Ferma.pdb
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.WEB\bin\ru\EntityFramework.resources.dll
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.WEB\bin\ru\EntityFramework.SqlServer.resources.dll

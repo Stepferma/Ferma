@@ -12,9 +12,9 @@ namespace Ferma.DAL.Entities
         [Key]
         public int IdStock { get; set; }
         public int IdPlayer { get; set; }
-        public int? Grass { get; set; }
-        public int? Seed { get; set; }
-        public int? Pork { get; set; }
-        public int? Eggs { get; set; }
+        public int Millet { get; set; }
+        public int Meat { get; set; }
+        public int Corn { get; set; }
+        public int Eggs { get; set; }
     }
 }

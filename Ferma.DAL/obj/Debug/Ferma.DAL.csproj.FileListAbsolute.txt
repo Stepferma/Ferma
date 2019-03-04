@@ -37,3 +37,5 @@ C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.CoreComp
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.CopyComplete
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.dll
 C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.pdb
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Change_Stock.resources
+C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Change_class_Stocks.resources
