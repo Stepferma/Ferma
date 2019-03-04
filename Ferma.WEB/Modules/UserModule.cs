@@ -9,7 +9,7 @@ namespace Ferma.Modules
     {
         public override void Load()
         {
-            Bind<IService<UserDTO>>().To<UserService>();
+            Bind<IServiceUsers<UserDTO>>().To<UserService>();
         }
     }
 }

@@ -12,9 +12,9 @@ namespace Ferma.Controllers
 {
     public class FarmController : Controller
     {
-        private IService<UserDTO> userService;
+        private IServiceUsers<UserDTO> userService;
 
-        public FarmController(IService<UserDTO> service)
+        public FarmController(IServiceUsers<UserDTO> service)
         {
             userService = service;
         }
