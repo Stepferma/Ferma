@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ferma.DAL.Entities
+namespace Ferma.BLL.DTO
 {
-    public class Stocks
+    public class StockDTO
     {
-        [Key]
         public int IdStock { get; set; }
         public int IdPlayer { get; set; }
         public int Millet { get; set; }

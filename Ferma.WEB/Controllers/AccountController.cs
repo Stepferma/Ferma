@@ -18,9 +18,9 @@ namespace Ferma.Controllers
 
     public class AccountController : Controller
     {
-        private IService<UserDTO> userService;
+        private IServiceUsers<UserDTO> userService;
 
-        public AccountController(IService<UserDTO> service)
+        public AccountController(IServiceUsers<UserDTO> service)
         {
             userService = service;
         }
@@ -69,8 +69,8 @@ namespace Ferma.Controllers
                     {
                         IsPersistent = true
                     }, claim);
-                    var asd = claim.Claims;
-                    var ass = claim.GetUserId();
+                    //var asd = claim.Claims;
+                    //var ass = claim.GetUserId();
                     userDto = userService.GetID(claim.GetUserId());
                     if (userDto == null)
                     {

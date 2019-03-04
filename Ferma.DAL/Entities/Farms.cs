@@ -11,7 +11,7 @@ namespace Ferma.DAL.Entities
     {
         [Key]
         public int IdFarm { get; set; }
-        public int? IdPlayer { get; set; }
-        public int? IdStock { get; set; }
+        public int IdPlayer { get; set; }
+        public int IdStock { get; set; }
     }
 }

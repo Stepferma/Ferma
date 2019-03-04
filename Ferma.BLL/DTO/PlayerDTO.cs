@@ -9,7 +9,7 @@ namespace Ferma.BLL.DTO
     public class PlayerDTO
     {
         public int IdPlayer { get; set; }
-        public int IdUser { get; set; }
+        public string IdUser { get; set; }
         public int Money { get; set; }
     }
 }
