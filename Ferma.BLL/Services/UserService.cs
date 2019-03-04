@@ -8,6 +8,7 @@ using Ferma.BLL.Infrastructure;
 using Ferma.BLL.Interfaces;
 using Ferma.DAL.Entities;
 using Ferma.DAL.Interfaces;
+using Microsoft.AspNet.Identity;
 
 namespace Ferma.BLL.Services
 {
@@ -19,9 +20,9 @@ namespace Ferma.BLL.Services
         {
             Database = uow;
         }
-        public async void Create(UserDTO userDTO)
+        public void Create(UserDTO userDTO)
         {
-            ApplicationUser user = await Database.UserManager.FindByEmailAsync(userDTO.Email);
+            ApplicationUser user =  Database.UserManager.FindById(userDTO.Id);
             if (user != null)
             {
                 UsersProfiles Client = new UsersProfiles
@@ -59,11 +60,14 @@ namespace Ferma.BLL.Services
         public UserDTO GetID(string id)
         {
             if (id == null)
-                throw new ValidationException("Не установлено id телефона");
-            var user = Database.Users.GetID(id);
-            if (user == null)
-                throw new ValidationException("Телефон не найден");
+            {
+                return null;
+            }
 
+            var user = Database.Users.GetID(id);
+            if (user == null) { 
+                return null;
+            }  
             return new UserDTO { UserName = user.UserName, Id = user.Id, Password = user.ApplicationUser.PasswordHash, Email = user.ApplicationUser.Email};
         }
 

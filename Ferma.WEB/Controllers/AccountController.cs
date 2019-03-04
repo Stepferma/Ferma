@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.Owin.Security;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 using Ferma.Models;
 using Ferma.BLL.DTO;
 using System.Security.Claims;
+using System.Web.UI.WebControls;
 using Ferma.BLL.Interfaces;
 using Ferma.BLL.Infrastructure;
 using Microsoft.AspNet.Identity;
@@ -68,9 +70,12 @@ namespace Ferma.Controllers
                     {
                         IsPersistent = true
                     }, claim);
-                    userDto = userService.GetID(User.Identity.GetUserId());
+                    var asd = claim.Claims;
+                    var ass = claim.GetUserId();
+                    userDto = userService.GetID(claim.GetUserId());
                     if (userDto == null)
                     {
+                        userDto = new UserDTO {Id = claim.GetUserId(), UserName = model.UserName, Password = model.Password};
                         userService.Create(userDto);
                     }
                     return RedirectToAction("Index", "Farm");
