@@ -1,4 +1,5 @@
-﻿using Ferma.BLL.DTO;
+﻿using AutoMapper;
+using Ferma.BLL.DTO;
 using Ferma.BLL.Interfaces;
 using Ferma.DAL.Entities;
 using Ferma.DAL.Interfaces;
@@ -7,7 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Ferma.BLL.Services
 {
@@ -22,23 +22,42 @@ namespace Ferma.BLL.Services
 
         public void Create(PlayerDTO playerDTO)
         {
- 
-            //Players plsyer = new Players { Money=playerDTO.Money,IdUser=Use}
+
+            Players player = new Players
+            {
+                Money = playerDTO.Money,
+                IdUser = playerDTO.IdUser
+            };
+
+            Database.Players.Create(player);
+
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Database.Dispose();
         }
 
-        public PlayerDTO GetID(string id)
+        public PlayerDTO GetID(int id)
         {
-            throw new NotImplementedException();
+            if (id == 0)
+            {
+                return null;
+            }
+
+            var player = Database.Players.GetID(id);
+            if (player == null)
+            {
+                return null;
+            }
+            return new PlayerDTO { IdPlayer = player.IdPlayer, IdUser = player.IdUser, Money = player.Money};
         }
 
         public IEnumerable<PlayerDTO> GetList()
         {
-            throw new NotImplementedException();
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<Players, PlayerDTO>()).CreateMapper();
+            var player = mapper.Map<IEnumerable<Players>, List<PlayerDTO>>(Database.Players.GetAll());
+            return player;
         }
     }
 }

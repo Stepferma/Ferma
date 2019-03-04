@@ -4,10 +4,10 @@ using Ferma.BLL.Infrastructure;
 
 namespace Ferma.BLL.Interfaces
 {
-    public interface IService<T>
+    public interface IServiceUsers<T>
     {
         void Create(T userDTO);
-        T GetID(int id);
+        T GetID(string id);
         IEnumerable<T> GetList();
         void Dispose();
     }

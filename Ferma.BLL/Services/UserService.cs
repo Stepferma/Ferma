@@ -12,7 +12,7 @@ using Microsoft.AspNet.Identity;
 
 namespace Ferma.BLL.Services
 {
-    public class UserService : IService<UserDTO>
+    public class UserService : IServiceUsers<UserDTO>
     {
         IUnitOfWork Database { get; set; }
 
@@ -50,8 +50,7 @@ namespace Ferma.BLL.Services
         }
 
         public IEnumerable<UserDTO> GetList()
-        {
-            var asd = Database.Users.GetAll();
+        {          
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<UsersProfiles, UserDTO>()).CreateMapper();
             var users = mapper.Map<IEnumerable<UsersProfiles>, List<UserDTO>>(Database.Users.GetAll());
             return users;
