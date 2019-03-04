@@ -37,3 +37,4 @@ C:\Users\fivern\source\repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.csproj.Generate
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.GLOBAL_UPDATE_MIGRATION.resources
 C:\Users\ЗатовД\Source\Repos\Stepferma\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_TypeProducts.resources
 C:\Users\fivern\Source\Repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Add_class_TypeProducts.resources
+C:\Users\fivern\Source\Repos\Ferma\Ferma.DAL\obj\Debug\Ferma.DAL.Migrations.Change_Stock.resources
