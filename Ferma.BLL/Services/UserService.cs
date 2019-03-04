@@ -37,7 +37,7 @@ namespace Ferma.BLL.Services
                 Players player = new Players { IdUser = user.Id, Money = 500 };
                 Database.Players.Create(player);
                 player = Database.Players.Find(i => i.IdUser == user.Id).FirstOrDefault();
-                Stocks stock = new Stocks { Eggs = 0, Grass = 0, Pork = 0, Seed = 0 , IdPlayer = player.IdPlayer};
+                Stocks stock = new Stocks { Eggs = 0, Meat = 0, Millet = 0,Corn = 0 , IdPlayer = player.IdPlayer};
                 Database.Stocks.Create(stock);
                 stock = Database.Stocks.Find(i => i.IdPlayer == player.IdPlayer).FirstOrDefault();
                 Farms farm = new Farms {IdPlayer = player.IdPlayer, IdStock = stock.IdStock};

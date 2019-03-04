@@ -70,6 +70,7 @@
     <Compile Include="DTO\FarmDTO.cs" />
     <Compile Include="DTO\FieldDTO.cs" />
     <Compile Include="DTO\PlayerDTO.cs" />
+    <Compile Include="DTO\StockDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
     <Compile Include="Infrastructure\OperationDetails.cs" />
     <Compile Include="Infrastructure\ServiceModule.cs" />
