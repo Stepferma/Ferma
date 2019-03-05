@@ -206,6 +206,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\Background\Background.png" />
     <Content Include="Images\Background\Background_test.png" />
+    <Content Include="Images\Background\block.png" />
     <Content Include="Images\Background\coin.png" />
     <Content Include="Images\Background\nameplate.png" />
     <Content Include="Images\Background\Shadow.png" />
@@ -219,6 +220,7 @@
     <Content Include="Images\Props\Flower_1.png" />
     <Content Include="Images\Props\Flower_2.png" />
     <Content Include="Images\Props\Flower_3.png" />
+    <Content Include="Images\Props\kuryatnik.png" />
     <Content Include="Images\Props\Lamp.png" />
     <Content Include="Images\Props\Pond\Leaf.png" />
     <Content Include="Images\Props\Pond\Pond.png" />
@@ -233,6 +235,7 @@
     <Content Include="Images\Props\Road_1.png" />
     <Content Include="Images\Props\Road_2.png" />
     <Content Include="Images\Props\Scarecrow.png" />
+    <Content Include="Images\Props\svinarnik.png" />
     <Content Include="Images\Props\Toilette.png" />
     <Content Include="Images\Props\Well.png" />
     <Content Include="Images\Vegetable\Beans\Beans.png" />
