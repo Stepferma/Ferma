@@ -12,9 +12,6 @@
 </head>
 <body class="globalBody">
     <div class="header-block">
-        <div class="text-left position-absolute img-block">
-            <img class="img_logo" src="~/Images/Logo/Untitled-1.png"/>
-        </div>
         <div class="text-center login-reg">
             @RenderBody()
         </div>
@@ -22,7 +19,6 @@
     <footer>
         <p>&copy; @DateTime.Now.Year - Step Ferma</p>
     </footer>
-    </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
