@@ -75,5 +75,18 @@ namespace Ferma.BLL.Services
 
 
         }
+
+
+        public bool SoldProduct(ProductDTO productDTO, PlayerDTO playerDTO)
+        {
+            TypeProducts typeProduct = Database.TypeProducts.GetID(productDTO.IdProduct);
+
+           
+                playerDTO.Money = playerDTO.Money + typeProduct.Price;
+                return true;
+                   
+
+
+        }
     }
 }
