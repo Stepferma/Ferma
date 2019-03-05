@@ -205,6 +205,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\Background\Background.png" />
+    <Content Include="Images\Background\background_Index.jpg" />
     <Content Include="Images\Background\Background_test.png" />
     <Content Include="Images\Background\coin.png" />
     <Content Include="Images\Background\farm_together_1.jpg" />
