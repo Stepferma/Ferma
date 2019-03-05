@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url(../Images/Background/background_Index.jpg);
+    background:  url(../Images/Background/background_Index.jpg) no-repeat fixed;
     background-size: cover;
 }
 
@@ -9,22 +9,13 @@
     padding-right: 15px;
 }
 
-.left-block{
-    margin-top: 45px;
-    outline: 2px solid;
-    background-color: white;
+.header-block{
+    height: 55px;
+    background-color: whitesmoke;
 }
-
-.centre-block{
-    margin-top: 45px;
-    outline: 2px solid;
-    background-color: white;
-}
-
-.right-block {
-    margin-top: 45px;
-    outline: 2px solid;
-    background-color: white;
+.login-reg{
+    padding: 10px;
+    margin: 0px;
 }
 
 .carousel-control-prev-icon {
