@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    background-image: url(../Images/Background/background_Index.jpg);
+    background-size: cover;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -8,6 +8,34 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.left-block{
+    margin-top: 45px;
+    outline: 2px solid;
+    background-color: white;
+}
+
+.centre-block{
+    margin-top: 45px;
+    outline: 2px solid;
+    background-color: white;
+}
+
+.right-block {
+    margin-top: 45px;
+    outline: 2px solid;
+    background-color: white;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 

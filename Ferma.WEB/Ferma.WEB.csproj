@@ -205,11 +205,16 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\Background\Background.png" />
+    <Content Include="Images\Background\background_Index.jpg" />
     <Content Include="Images\Background\Background_test.png" />
     <Content Include="Images\Background\block.png" />
     <Content Include="Images\Background\coin.png" />
+    <Content Include="Images\Background\farm_together_1.jpg" />
     <Content Include="Images\Background\nameplate.png" />
     <Content Include="Images\Background\Shadow.png" />
+    <Content Include="Images\Carousel\Coin-for-carousel.png" />
+    <Content Include="Images\Carousel\farm.jpg" />
+    <Content Include="Images\Carousel\Vegetable.jpg" />
     <Content Include="Images\Props\Bench_1.png" />
     <Content Include="Images\Props\Bench_2.png" />
     <Content Include="Images\Props\BirdHouse.png" />

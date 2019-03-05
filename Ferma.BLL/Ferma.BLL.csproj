@@ -76,6 +76,7 @@
     <Compile Include="DTO\PlayerDTO.cs" />
     <Compile Include="DTO\ProductDTO.cs" />
     <Compile Include="DTO\StockDTO.cs" />
+    <Compile Include="DTO\TypeBuildingsDTO.cs" />
     <Compile Include="DTO\TypeProductsDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
     <Compile Include="Infrastructure\OperationDetails.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\ServiceCreator.cs" />
     <Compile Include="Services\StockService.cs" />
+    <Compile Include="Services\TypeBuildingService.cs" />
     <Compile Include="Services\TypeProductsService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Services\UserServiceAuth.cs" />
