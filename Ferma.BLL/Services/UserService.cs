@@ -44,7 +44,10 @@ namespace Ferma.BLL.Services
                 Database.Farms.Create(farm);
                 farm = Database.Farms.Find(i => i.IdPlayer == player.IdPlayer).FirstOrDefault();
                 Fields field = new Fields {IdBuilding = 0, IdFarm = farm.IdFarm};
-                Database.Fields.Create(field);
+                for (int i = 0; i < 12; i++)
+                {
+                    Database.Fields.Create(field);
+                }
                 Database.Save();              
             } 
         }
