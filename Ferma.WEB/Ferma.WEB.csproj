@@ -187,6 +187,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BuildingModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
@@ -362,6 +363,7 @@
     <Content Include="Views\Account\SuccessRegister.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Farm\Index.cshtml" />
+    <Content Include="Views\Farm\Building.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

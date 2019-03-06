@@ -1,6 +1,13 @@
 ﻿$(function () {
     $.ajaxSetup({ cache: false });
     $(".field").click(function (e) {
-        alert("В разработке!!!");
+          $("#divLoader").show();
+        e.preventDefault();
+        var url = $(this).data('request-url');
+        $.get(url, function (data) {
+            $("#divLoader").hide();
+            $('#dialogContent').html(data);
+            $('#modDialog').modal('show');
+        })
     })
 });  

@@ -25,5 +25,16 @@ namespace Ferma.Controllers
             UserViewModel userView = new UserViewModel {UserName = userDto.UserName, Email = userDto.Email};
             return PartialView(userView);
         }
+
+        public ActionResult Building()
+        {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public ActionResult Building(BuildingModel buildingModel)
+        {
+            return View("Index");
+        }
     }
 }
