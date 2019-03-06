@@ -18,8 +18,7 @@ namespace Ferma.DAL.Migrations
             TypeBuildings empty = new TypeBuildings() { IdTypeBuilding = 1, Price = 0, Name = "Пусто", BuildTime = 0 };
             TypeBuildings chickenCoop = new TypeBuildings() { IdTypeBuilding = 2, Price = 300, Name = "Курятник", BuildTime = 4 };
             TypeBuildings pigsty = new TypeBuildings() { IdTypeBuilding = 3, Price = 500, Name = "Свинарник", BuildTime = 6 };
-            TypeBuildings milletBed = new TypeBuildings() { IdTypeBuilding = 4, Price = 200, Name = "Пшено", BuildTime = 2 };
-            TypeBuildings cornBed = new TypeBuildings() { IdTypeBuilding = 5, Price = 250, Name = "Кукуруза", BuildTime = 3 };
+            TypeBuildings gardenBed = new TypeBuildings() { IdTypeBuilding = 4, Price = 250, Name = "Грядка", BuildTime = 3 };
 
             TypeProducts egg = new TypeProducts() { IdTypeProducts = 1, Name = "Яйца" };
             TypeProducts seeds = new TypeProducts() { IdTypeProducts = 2, Name = "Семена" };
@@ -33,8 +32,7 @@ namespace Ferma.DAL.Migrations
             context.TypeBuildings.Add(empty);
             context.TypeBuildings.Add(chickenCoop);
             context.TypeBuildings.Add(pigsty);
-            context.TypeBuildings.Add(milletBed);
-            context.TypeBuildings.Add(cornBed);
+            context.TypeBuildings.Add(gardenBed);
 
             context.TypeProducts.Add(egg);
             context.TypeProducts.Add(seeds);

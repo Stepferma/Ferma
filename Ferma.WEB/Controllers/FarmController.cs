@@ -32,12 +32,12 @@ namespace Ferma.Controllers
             return PartialView(userView);
         }
 
-        public ActionResult Building()
-        {
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PhoneDTO, PhoneViewModel>()).CreateMapper();
-            var phones = mapper.Map<IEnumerable<PhoneDTO>, List<PhoneViewModel>>(phoneDtos);
-            return PartialView(typeBuildingService.GetList().ToList());
-        }
+        //public ActionResult Building()
+        //{
+            //var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PhoneDTO, PhoneViewModel>()).CreateMapper();
+            //var phones = mapper.Map<IEnumerable<PhoneDTO>, List<PhoneViewModel>>(phoneDtos);
+            //return PartialView(typeBuildingService.GetList().ToList());
+        //}
 
         [HttpPost]
         public ActionResult Building(BuildingModel buildingModel)
