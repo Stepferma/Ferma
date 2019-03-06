@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url(../Images/Background/farm_together_1.jpg);
+    --background-image: url(../Images/Background/background_Index.jpg);
     background-size: cover;
 }
 
@@ -9,22 +9,13 @@
     padding-right: 15px;
 }
 
-.left-block{
-    margin-top: 45px;
-    outline: 2px solid;
-    background-color: white;
+.header-block{
+    height: 55px;
+    background-color: whitesmoke;
 }
-
-.centre-block{
-    margin-top: 45px;
-    outline: 2px solid;
-    background-color: white;
-}
-
-.right-block {
-    margin-top: 45px;
-    outline: 2px solid;
-    background-color: white;
+.login-reg{
+    padding: 10px;
+    margin: 0px;
 }
 
 .carousel-control-prev-icon {
@@ -51,30 +42,32 @@ textarea {
     max-width: 280px;
 }
 .farmhead {
-    margin-left: 20%; 
-    margin-right: 20%;
-    margin-top: 40%;
+    margin-left: 12%;
+    margin-top: 60%;
     z-index: 1;
     position: fixed;
-    width: 60%; 
+    width: 80%;
     height: 100%;
 }
+
 .farmbody {
-    background: url("../Images/Background/Background.png") no-repeat;
+
+}
+.farmcontent {
+    background: url("../Images/Background/Background2.png");
+    background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
-}
-.farmcontent {
-    margin-top: 10%;
+    position: absolute;
 }
 
 .nameplate {
     display: inline-block;
     background: url(../Images/Background/nameplate.png) no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding-top: 1%;
-    width: 19.5%;
+    width: 19%;
     height: 12%;
     color: burlywood;
     z-index: 1;
@@ -85,7 +78,7 @@ textarea {
         margin-right: 20%;
         margin-top: 10%;
         width: 20%;
-        height: 50%;
+        height: 40%;
     }
 
 .nameplate h4 {
@@ -95,25 +88,47 @@ textarea {
 }
 
 .farm {
-    width: 44%;
-    height: 44%;
-    margin-left: 27.9%;
-    margin-top: 12.3%;
+    margin: 19.5% 36%;
+    width: 50%;
+    height: 50%;
+    position: fixed;
 }
 
 .field {
-    display: inline-block;
-    background: url(../Images/Vegetable/Field/Field.png) no-repeat;
+    background: url(../Images/Background/block.png) no-repeat;
     background-size: contain;
-    width: 32%;
-    height: 31.8%;
-    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    margin: -5.9% 0px;
+    width: 25%;
+    height: 27%;
+    margin-left: -1%;
+    position: relative;
+    display: inline-block;
+}
+.farm .field:nth-child(6n-2){
+    margin-left:12%;
 }
 
+.field .imagebuild {
+    background: url(../Images/Props/home.png) no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 65%;
+    margin: -10% 5%;
+    position: absolute;
+    z-index: 1;
+}
 .field:hover {
-    opacity: 1;
+    background: url(../Images/Background/blockhover.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
 }
 
+.imagebuild:hover {  
+    transform:scale(1.15);
+    cursor: pointer;
+}
 @-webkit-keyframes swing {
     15% {
         -webkit-transform: translateX(9px);
@@ -173,4 +188,11 @@ textarea {
     animation: swing 0.6s ease;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+}
+
+.LoginBtn
+{
+    border: 200px;
+    border-radius: 20px;
+    border-width: 200px;
 }

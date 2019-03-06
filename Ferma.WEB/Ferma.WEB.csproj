@@ -187,6 +187,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BuildingModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
@@ -205,14 +206,20 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\Background\Background.png" />
+    <Content Include="Images\Background\Background2.png" />
+    <Content Include="Images\Background\background_Index.jpg" />
     <Content Include="Images\Background\Background_test.png" />
+    <Content Include="Images\Background\block.png" />
+    <Content Include="Images\Background\blockhover.png" />
     <Content Include="Images\Background\coin.png" />
     <Content Include="Images\Background\farm_together_1.jpg" />
     <Content Include="Images\Background\nameplate.png" />
     <Content Include="Images\Background\Shadow.png" />
+    <Content Include="Images\Background\Untitled design.jpg" />
     <Content Include="Images\Carousel\Coin-for-carousel.png" />
     <Content Include="Images\Carousel\farm.jpg" />
     <Content Include="Images\Carousel\Vegetable.jpg" />
+    <Content Include="Images\Logo\Untitled-1.png" />
     <Content Include="Images\Props\Bench_1.png" />
     <Content Include="Images\Props\Bench_2.png" />
     <Content Include="Images\Props\BirdHouse.png" />
@@ -223,6 +230,8 @@
     <Content Include="Images\Props\Flower_1.png" />
     <Content Include="Images\Props\Flower_2.png" />
     <Content Include="Images\Props\Flower_3.png" />
+    <Content Include="Images\Props\home.png" />
+    <Content Include="Images\Props\kuryatnik.png" />
     <Content Include="Images\Props\Lamp.png" />
     <Content Include="Images\Props\Pond\Leaf.png" />
     <Content Include="Images\Props\Pond\Pond.png" />
@@ -237,6 +246,7 @@
     <Content Include="Images\Props\Road_1.png" />
     <Content Include="Images\Props\Road_2.png" />
     <Content Include="Images\Props\Scarecrow.png" />
+    <Content Include="Images\Props\svinarnik.png" />
     <Content Include="Images\Props\Toilette.png" />
     <Content Include="Images\Props\Well.png" />
     <Content Include="Images\Vegetable\Beans\Beans.png" />
@@ -353,6 +363,7 @@
     <Content Include="Views\Account\SuccessRegister.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Farm\Index.cshtml" />
+    <Content Include="Views\Farm\Building.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
