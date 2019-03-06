@@ -1,2 +1,37 @@
-﻿
-В разработке
+﻿@using Ferma.Models;
+@model List<TypeBuildingsModel>
+@Styles.Render("~/Content/css")
+<div class="buildings">
+
+</div>
+
+@foreach (var item in Model)
+{
+    <script>
+        var newElems = $('.buildings');
+    </script>
+    if (item.Name.Equals("Курятник"))
+    {
+        <script>
+            var newElems = $('.buildings');
+            newElems.append("<div class='kuryatnik'></div>");
+        </script>
+    }
+
+    if (item.Name.Equals("Свинарник"))
+    {
+        <script>
+            var newElems = $('.buildings');
+            newElems.append("<div class='svinarnik'></div>");
+        </script>
+    }
+    <script>
+        var newElems = $('.buildings');
+        newElems.append("<h4>@item.Name</h4>");
+        newElems.append("<h4>@item.Price</h4>");
+        newElems.append("<h4>@item.BuildTime</h4>");
+    </script>
+}
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
