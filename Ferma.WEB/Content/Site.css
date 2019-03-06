@@ -1,8 +1,11 @@
-﻿body {
-    --background-image: url(../Images/Background/background_Index.jpg);
+﻿.globalBody {
+    background-image: url(../Images/Background/background_Index.jpg);
     background-size: cover;
 }
+body
+{
 
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
