@@ -35,7 +35,7 @@ namespace Ferma.DAL.Migrations
             AddColumn("dbo.TypeProducts", "BuildTime", c => c.DateTime(nullable: false));
             AddColumn("dbo.TypeProducts", "Price", c => c.Int(nullable: false));
             AddColumn("dbo.Products", "DateStart", c => c.DateTime());
-            AlterColumn("dbo.TypeBuildings", "BuildTime", c => c.DateTime(nullable: false));
+            AlterColumn("dbo.TypeBuildings", "BuildTime", c => c.Double(nullable: false));
             AlterColumn("dbo.TypeBuildings", "Name", c => c.String(maxLength: 50));
             AlterColumn("dbo.Fields", "IdFarm", c => c.Int());
             AlterColumn("dbo.Fields", "IdBuilding", c => c.Int());
