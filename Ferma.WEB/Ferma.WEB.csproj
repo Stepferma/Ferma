@@ -188,9 +188,19 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BuildingModel.cs" />
+    <Compile Include="Models\CellModel.cs" />
+    <Compile Include="Models\FarmModel.cs" />
+    <Compile Include="Models\FieldModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\PlayerModel.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Models\StockModel.cs" />
+    <Compile Include="Models\TypeBuildingsModel.cs" />
+    <Compile Include="Models\TypeProductsModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
+    <Compile Include="Modules\TypeBuildModule.cs" />
+    <Compile Include="Modules\TypeProductModule.cs" />
     <Compile Include="Modules\UserModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -281,6 +291,8 @@
     <Content Include="Images\Carousel\Coin-for-carousel.png" />
     <Content Include="Images\Carousel\farm.jpg" />
     <Content Include="Images\Carousel\Vegetable.jpg" />
+    <Content Include="Images\Logo\game-button.png" />
+    <Content Include="Images\Logo\Logo.png" />
     <Content Include="Images\Logo\Untitled-1.png" />
     <Content Include="Images\Props\Bench_1.png" />
     <Content Include="Images\Props\Bench_2.png" />

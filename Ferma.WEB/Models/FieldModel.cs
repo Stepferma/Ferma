@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Ferma.DAL.Entities
+namespace Ferma.Models
 {
-    public class Fields
+    public class FieldModel
     {
-        [Key]
         public int IdField { get; set; }
         public int IdBuilding { get; set; }
         public int IdFarm { get; set; }
-        public bool IsActive { get; set; }
     }
 }

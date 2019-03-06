@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ferma.DAL.Entities
+namespace Ferma.BLL.DTO
 {
-    public class Buildings
+    public class CellDTO
     {
-        [Key]
-        public int IdBuilding { get; set; }
-        public int IdTypeBuilding { get; set; }
+        public int IdCell { get; set; }
+        public int IdField { get; set; }
+        public int IdProduct { get; set; }
         public bool IsActive { get; set; }
         public DateTime DateStart { get; set; }
     }

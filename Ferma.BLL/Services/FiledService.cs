@@ -19,7 +19,10 @@ namespace Ferma.BLL.Services
         {
             Database = uow;
         }
-
+        //public bool BeginBuilding(int idField,int idTypeBuilding)
+        //{
+        //    TypeBuildingsDTO types = 
+        //}
         public void Create(FieldDTO fieldDTO)
         {
             Fields field = new Fields
@@ -31,7 +34,6 @@ namespace Ferma.BLL.Services
 
             Database.Fields.Create(field);
         }
-
         public void Dispose()
         {
             Database.Dispose();
@@ -51,7 +53,6 @@ namespace Ferma.BLL.Services
             }
             return new FieldDTO { IdBuilding = field.IdBuilding, IdFarm = field.IdFarm, IdField = field.IdField };
         }
-
         public IEnumerable<FieldDTO> GetList()
         {
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<Fields, FieldDTO>()).CreateMapper();

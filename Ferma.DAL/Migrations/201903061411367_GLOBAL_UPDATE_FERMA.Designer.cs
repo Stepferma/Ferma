@@ -7,13 +7,13 @@ namespace Ferma.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Change_class_Stocks : IMigrationMetadata
+    public sealed partial class GLOBAL_UPDATE_FERMA : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Change_class_Stocks));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(GLOBAL_UPDATE_FERMA));
         
         string IMigrationMetadata.Id
         {
-            get { return "201903041307120_Change_class_Stocks"; }
+            get { return "201903061411367_GLOBAL_UPDATE_FERMA"; }
         }
         
         string IMigrationMetadata.Source

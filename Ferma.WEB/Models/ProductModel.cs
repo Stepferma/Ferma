@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Ferma.DAL.Entities
+namespace Ferma.Models
 {
-    public class Products
+    public class ProductModel
     {
-        [Key]
         public int IdProduct { get; set; }
         public int IdTypeProduct { get; set; }
         public int Price { get; set; }
-        [StringLength(30)]
         public string Name { get; set; }
         public double BuildTime { get; set; }
     }

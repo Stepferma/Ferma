@@ -26,7 +26,9 @@ namespace Ferma.BLL.Services
             {
                 IdProduct = productDTO.IdProduct,
                 IdTypeProduct = productDTO.IdTypeProduct,
-                DateStart = productDTO.DateStart
+                BuildTime = productDTO.BuildTime,
+                Price = productDTO.Price,
+                Name = productDTO.Name
             };
             Database.Products.Create(product);
         }
@@ -48,7 +50,12 @@ namespace Ferma.BLL.Services
             {
                 return null;
             }
-            return new ProductDTO { IdProduct = product.IdProduct, IdTypeProduct = product.IdTypeProduct, DateStart = product.DateStart };
+            return new ProductDTO { IdProduct = product.IdProduct,
+                                    IdTypeProduct = product.IdTypeProduct,
+                                    BuildTime = product.IdProduct,
+                                    Name = product.Name,
+                                    Price = product.Price
+                                    };
         }
 
         public IEnumerable<ProductDTO> GetList()
@@ -61,11 +68,9 @@ namespace Ferma.BLL.Services
 
         public bool BuyProduct(ProductDTO productDTO, PlayerDTO playerDTO)
         {
-            TypeProducts typeProduct = Database.TypeProducts.GetID(productDTO.IdProduct);
-
-            if (playerDTO.Money > typeProduct.Price)
+            if (playerDTO.Money > productDTO.Price)
             {
-                playerDTO.Money = playerDTO.Money - typeProduct.Price;
+                playerDTO.Money = playerDTO.Money - productDTO.Price;
                 return true;
             }
             else
@@ -79,14 +84,8 @@ namespace Ferma.BLL.Services
 
         public bool SoldProduct(ProductDTO productDTO, PlayerDTO playerDTO)
         {
-            TypeProducts typeProduct = Database.TypeProducts.GetID(productDTO.IdProduct);
-
-           
-                playerDTO.Money = playerDTO.Money + typeProduct.Price;
-                return true;
-                   
-
-
+            playerDTO.Money += productDTO.Price;
+            return true;
         }
     }
 }

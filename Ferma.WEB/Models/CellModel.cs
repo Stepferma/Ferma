@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Ferma.DAL.Entities
+namespace Ferma.Models
 {
-    public class Cells
+    public class CellModel
     {
-        [Key]
         public int IdCell { get; set; }
         public int IdField { get; set; }
         public int IdProduct { get; set; }

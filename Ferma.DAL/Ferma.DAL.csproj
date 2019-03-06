@@ -78,21 +78,9 @@
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUnitOfWorkAuth.cs" />
-    <Compile Include="Migrations\201902271907336_GLOBAL_UPDATE_MIGRATION.cs" />
-    <Compile Include="Migrations\201902271907336_GLOBAL_UPDATE_MIGRATION.Designer.cs">
-      <DependentUpon>201902271907336_GLOBAL_UPDATE_MIGRATION.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902281359378_Add_class_TypeProducts.cs" />
-    <Compile Include="Migrations\201902281359378_Add_class_TypeProducts.Designer.cs">
-      <DependentUpon>201902281359378_Add_class_TypeProducts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201903040602198_Change_Stock.cs" />
-    <Compile Include="Migrations\201903040602198_Change_Stock.Designer.cs">
-      <DependentUpon>201903040602198_Change_Stock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201903041307120_Change_class_Stocks.cs" />
-    <Compile Include="Migrations\201903041307120_Change_class_Stocks.Designer.cs">
-      <DependentUpon>201903041307120_Change_class_Stocks.cs</DependentUpon>
+    <Compile Include="Migrations\201903061411367_GLOBAL_UPDATE_FERMA.cs" />
+    <Compile Include="Migrations\201903061411367_GLOBAL_UPDATE_FERMA.Designer.cs">
+      <DependentUpon>201903061411367_GLOBAL_UPDATE_FERMA.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,17 +107,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902271907336_GLOBAL_UPDATE_MIGRATION.resx">
-      <DependentUpon>201902271907336_GLOBAL_UPDATE_MIGRATION.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902281359378_Add_class_TypeProducts.resx">
-      <DependentUpon>201902281359378_Add_class_TypeProducts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903040602198_Change_Stock.resx">
-      <DependentUpon>201903040602198_Change_Stock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903041307120_Change_class_Stocks.resx">
-      <DependentUpon>201903041307120_Change_class_Stocks.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903061411367_GLOBAL_UPDATE_FERMA.resx">
+      <DependentUpon>201903061411367_GLOBAL_UPDATE_FERMA.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Ferma.DAL.Entities;
+using System;
 
 namespace Ferma.DAL.EF
 {

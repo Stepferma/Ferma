@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AutoMapper;
 using Ferma.BLL.DTO;
 using Ferma.BLL.Interfaces;
 using Ferma.Models;
@@ -13,10 +14,15 @@ namespace Ferma.Controllers
     public class FarmController : Controller
     {
         private IServiceUsers<UserDTO> userService;
+        private IService<TypeProductsDTO> typeProductService;
+        private IService<TypeBuildingsDTO> typeBuildingService;
 
-        public FarmController(IServiceUsers<UserDTO> service)
+        public FarmController(IServiceUsers<UserDTO> service, IService<TypeProductsDTO> service2, IService<TypeBuildingsDTO> service3)
         {
             userService = service;
+            typeProductService = service2;
+            typeBuildingService = service3;
+
         }
         // GET: Farm
         public ActionResult Index()
@@ -28,11 +34,13 @@ namespace Ferma.Controllers
 
         public ActionResult Building()
         {
-            return PartialView();
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TypeBuildingsDTO, TypeBuildingsModel>()).CreateMapper();
+            var typeBuildings = mapper.Map<IEnumerable<TypeBuildingsDTO>, List<TypeBuildingsModel>>(typeBuildingService.GetList()).ToList();
+            return PartialView(typeBuildings);
         }
 
         [HttpPost]
-        public ActionResult Building(BuildingModel buildingModel)
+        public ActionResult Building(TypeBuildingsModel typeBuildingModel)
         {
             return View("Index");
         }
