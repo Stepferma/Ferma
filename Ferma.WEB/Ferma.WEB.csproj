@@ -188,8 +188,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BuildingModel.cs" />
+    <Compile Include="Models\CellModel.cs" />
+    <Compile Include="Models\FarmModel.cs" />
+    <Compile Include="Models\FieldModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\PlayerModel.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Models\StockModel.cs" />
     <Compile Include="Models\TypeBuildingsModel.cs" />
     <Compile Include="Models\TypeProductsModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
