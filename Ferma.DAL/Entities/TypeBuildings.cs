@@ -11,9 +11,10 @@ namespace Ferma.DAL.Entities
     {
         [Key]
         public int IdTypeBuilding { get; set; }
-        [StringLength(50)]
+        public int IdTypeProduct { get; set; }
+        [StringLength(30)]
         public string Name { get; set; }
         public int Price { get; set; }
-        public DateTime BuildTime { get; set; }
+        public double BuildTime { get; set; }
     }
 }
