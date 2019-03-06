@@ -40,7 +40,7 @@ namespace Ferma.Controllers
         }
 
         [HttpPost]
-        public ActionResult Building(TypeBuildingsModel typeBuildingModel)
+        public ActionResult Building(int idField, int idBuildingType)
         {
             return View("Index");
         }

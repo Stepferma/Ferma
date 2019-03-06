@@ -29,7 +29,6 @@ body
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-.
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -66,21 +65,37 @@ textarea {
 }
 
 .kuryatnik {
-    background: url("../Images/Props/kuryatnik.png");
+    background: url(../Images/Props/kuryatnik.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: fixed;
+    background-size: contain;
+    height: 10%;
+    width: 20%;
 }
 
+.headBuilding {
+    display: flex;
+    width: 100%;
+    margin-left: 25%;
+}
+
+.headBuilding >*{
+    padding-left: 4%;
+}
+
+.building {
+    display: flex;
+    width: 100%;
+}
+
+.building > * {
+    padding-left: 13%;
+}
 .svinarnik {
     background: url("../Images/Props/svinarnik.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: fixed;
+    background-size: contain;
+    height: 10%;
+    width: 20%;
 }
 
 .nameplate {

@@ -2,36 +2,42 @@
 @model List<TypeBuildingsModel>
 @Styles.Render("~/Content/css")
 <div class="buildings">
+<div class='headBuilding'>
+    <h4>Наименование</h4>
+    <h4>Стоимость</h4>
+    <h4>Время постройки</h4>
+    </div>
+    @foreach (var item in Model)
+    {
+        if (item.Name.Equals("Пусто"))
+        {
+            continue;
+        }
+        <div class='building'>
+            @if (item.Name.Equals("Курятник"))
+            {
+                <form id="formPost" data-request-url="@Url.Action("Building", "Farm")">
+                    <input type="hidden" name="idField" value="1">
+                    <input type="hidden" name="idBuildingType" value="@item.IdTypeBuilding">
+                        <input type="submit" value="" class="kuryatnik">
+                </form>
 
+            }
+            else if (item.Name.Equals("Свинарник"))
+            {
+
+                <div class='svinarnik'></div>
+
+            }
+            else if (item.Name.Equals("Грядка"))
+            {
+                <div class='svinarnik'></div>
+            }
+            <h4>@item.Name</h4>
+            <h4>@item.Price тг</h4>
+            <h4>@item.BuildTime минут</h4>
+        </div>
+    }
 </div>
-
-@foreach (var item in Model)
-{
-    <script>
-        var newElems = $('.buildings');
-    </script>
-    if (item.Name.Equals("Курятник"))
-    {
-        <script>
-            var newElems = $('.buildings');
-            newElems.append("<div class='kuryatnik'></div>");
-        </script>
-    }
-
-    if (item.Name.Equals("Свинарник"))
-    {
-        <script>
-            var newElems = $('.buildings');
-            newElems.append("<div class='svinarnik'></div>");
-        </script>
-    }
-    <script>
-        var newElems = $('.buildings');
-        newElems.append("<h4>@item.Name</h4>");
-        newElems.append("<h4>@item.Price</h4>");
-        newElems.append("<h4>@item.BuildTime</h4>");
-    </script>
-}
-
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")
