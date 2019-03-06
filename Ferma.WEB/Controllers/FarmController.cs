@@ -34,9 +34,9 @@ namespace Ferma.Controllers
 
         public ActionResult Building()
         {
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TypeBuildingsDTO, TypeBuildingsModel>()).CreateMapper();
-            var typeBuildings = mapper.Map<IEnumerable<TypeBuildingsDTO>, List<TypeBuildingsModel>>(typeBuildingService.GetList()).ToList();
-            return PartialView(typeBuildings);
+            //var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PhoneDTO, PhoneViewModel>()).CreateMapper();
+            //var phones = mapper.Map<IEnumerable<PhoneDTO>, List<PhoneViewModel>>(phoneDtos);
+            return PartialView(typeBuildingService.GetList().ToList());
         }
 
         [HttpPost]
