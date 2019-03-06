@@ -1,4 +1,5 @@
-﻿using Ferma.BLL.DTO;
+﻿using AutoMapper;
+using Ferma.BLL.DTO;
 using Ferma.BLL.Interfaces;
 using Ferma.DAL.Entities;
 using Ferma.DAL.Interfaces;
@@ -31,17 +32,26 @@ namespace Ferma.BLL.Services
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Database.Dispose();
         }
 
         public CellDTO GetID(int id)
         {
-            throw new NotImplementedException();
+            Cells cell = Database.Cells.GetID(id);
+            return new CellDTO()
+            {
+                IdCell = cell.IdCell,
+                IdField = cell.IdField,
+                IdProduct = cell.IdProduct,
+                DateStart = cell.DateStart,
+                IsActive = cell.IsActive
+            };
         }
 
         public IEnumerable<CellDTO> GetList()
         {
-            throw new NotImplementedException();
+            IMapper mapper = new MapperConfiguration(config => config.CreateMap<Cells, CellDTO>()).CreateMapper();
+            return mapper.Map<IEnumerable<Cells>, List<CellDTO>>(Database.Cells.GetAll());
         }
     }
 }
