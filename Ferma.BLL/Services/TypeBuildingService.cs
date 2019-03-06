@@ -52,7 +52,13 @@ namespace Ferma.BLL.Services
             {
                 return null;
             }
-            return new TypeBuildingsDTO { BuildTime= typeBuildings.BuildTime,IdTypeBuilding= typeBuildings.IdTypeBuilding,Price= typeBuildings.Price,Name= typeBuildings.Name };
+            return new TypeBuildingsDTO {
+                IdTypeBuilding = typeBuildings.IdTypeBuilding,
+                IdTypeProduct = typeBuildings.IdTypeProduct,
+                Name = typeBuildings.Name,
+                Price = typeBuildings.Price,
+                BuildTime = typeBuildings.BuildTime
+            };
         }
 
         public IEnumerable<TypeBuildingsDTO> GetList()
