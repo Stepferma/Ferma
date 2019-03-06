@@ -47,7 +47,7 @@ namespace Ferma.Controllers
 
         public ActionResult Login()
         {
-            return View();
+            return PartialView();
         }
 
         [HttpPost]
