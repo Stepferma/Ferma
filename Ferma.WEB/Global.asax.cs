@@ -23,8 +23,10 @@ namespace Ferma
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             NinjectModule userModule = new UserModule();
+            NinjectModule typeProductModule = new TypeProductModule();
+            NinjectModule typeBuildingsModule = new TypeBuildModule();
             NinjectModule serviceModule = new ServiceModule();
-            var kernel = new StandardKernel(userModule, serviceModule);
+            var kernel = new StandardKernel(userModule,typeProductModule,typeBuildingsModule, serviceModule);
             DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
             kernel.Unbind<ModelValidatorProvider>();
         }

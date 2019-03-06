@@ -45,12 +45,12 @@ textarea {
     max-width: 280px;
 }
 .farmhead {
-    margin-left: 12%;
-    margin-top: 60%;
+    margin-left: 19%;
+    margin-top: 2%;
     z-index: 1;
     position: fixed;
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 10%;
 }
 
 .farmbody {
@@ -62,7 +62,7 @@ textarea {
     background-size: cover;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
 }
 
 .nameplate {
@@ -71,30 +71,28 @@ textarea {
     background-size: contain;
     padding-top: 1%;
     width: 19%;
-    height: 12%;
+    height: 100%;
     color: burlywood;
     z-index: 1;
 }
 
     .nameplate img {
-        margin-left: 20%;
+        margin-left: 10%;
         margin-right: 20%;
-        margin-top: 10%;
+        margin-top: 5%;
         width: 20%;
-        height: 40%;
+        height: 50%;
     }
 
 .nameplate h4 {
-    margin-top: -16%;
-    margin-left: 50%;
+    margin-top: -13%;
+    margin-left: 40%;
     font-size: 150%;
 }
 
 .farm {
-    margin: 19.5% 36%;
-    width: 50%;
-    height: 50%;
-    position: fixed;
+    margin: 13.5% 34%;
+    width: 40%;
 }
 
 .field {
@@ -102,23 +100,22 @@ textarea {
     background-size: contain;
     width: 100%;
     height: 100%;
-    margin: -5.9% 0px;
-    width: 25%;
-    height: 27%;
-    margin-left: -1%;
+    margin: -4% -2%;
+    width: 28%;
+    height: 13%;
     position: relative;
     display: inline-block;
 }
 .farm .field:nth-child(6n-2){
-    margin-left:12%;
+    margin-left:11%;
 }
 
 .field .imagebuild {
     background: url(../Images/Props/home.png) no-repeat;
     background-size: contain;
-    width: 80%;
-    height: 65%;
-    margin: -10% 5%;
+    width: 100%;
+    height: 80%;
+    margin: -4% 12%;
     position: absolute;
     z-index: 1;
 }
