@@ -11,18 +11,36 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Ferma.BLL.Services
 {
-    public class FiledService : IService<FieldDTO>
+    public class FieldService : IService<FieldDTO>
     {
         IUnitOfWork Database { get; set; }
 
-        public FiledService(IUnitOfWork uow)
+        public FieldService(IUnitOfWork uow)
         {
             Database = uow;
         }
-        //public bool BeginBuilding(int idField,int idTypeBuilding)
-        //{
-        //    TypeBuildingsDTO types = 
-        //}
+        public bool BeginBuilding(int idField, int idTypeBuilding,string idUser)
+        {
+            TypeBuildings type = Database.TypeBuildings.Find(tb => tb.IdTypeBuilding == idTypeBuilding).FirstOrDefault();
+            Fields field = Database.Fields.Find(f => f.IdField == idField).FirstOrDefault();
+            Players player = Database.Players.Find(p => p.IdUser == idUser).FirstOrDefault();
+            if (player.Money < type.Price)
+            {
+                return false;
+            }  
+            else
+            {
+                Buildings building = new Buildings()
+                {
+                    IdTypeBuilding = type.IdTypeBuilding,
+                    IsActive = false,
+                    DateStart = DateTime.Now
+                };
+                Database.Buildings.Create(building);
+                field.IdBuilding = building.IdBuilding;
+                return true;
+            }
+        }
         public void Create(FieldDTO fieldDTO)
         {
             Fields field = new Fields
@@ -31,7 +49,6 @@ namespace Ferma.BLL.Services
                 IdFarm = fieldDTO.IdFarm,
                 IdField = fieldDTO.IdField
             };
-
             Database.Fields.Create(field);
         }
         public void Dispose()

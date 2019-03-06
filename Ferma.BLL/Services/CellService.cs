@@ -53,5 +53,16 @@ namespace Ferma.BLL.Services
             IMapper mapper = new MapperConfiguration(config => config.CreateMap<Cells, CellDTO>()).CreateMapper();
             return mapper.Map<IEnumerable<Cells>, List<CellDTO>>(Database.Cells.GetAll());
         }
+
+        public void IsActive(ProductDTO product)
+        {
+            Cells cell = Database.Cells.Find(x => x.IdProduct == product.IdProduct).FirstOrDefault();
+
+            TimeSpan isReady = cell.DateStart - DateTime.Now;
+            if (isReady.TotalMinutes > product.BuildTime)
+            {
+                cell.IsActive = true;
+            }
+        } 
     }
 }
