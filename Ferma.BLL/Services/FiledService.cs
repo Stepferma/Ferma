@@ -19,10 +19,10 @@ namespace Ferma.BLL.Services
         {
             Database = uow;
         }
-        public void BeginBuilding(BuildingDTO building)
-        {
-
-        }
+        //public bool BeginBuilding(int idField,int idTypeBuilding)
+        //{
+        //    TypeBuildingsDTO types = 
+        //}
         public void Create(FieldDTO fieldDTO)
         {
             Fields field = new Fields

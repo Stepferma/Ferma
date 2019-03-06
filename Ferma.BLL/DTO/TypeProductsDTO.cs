@@ -10,8 +10,5 @@ namespace Ferma.BLL.DTO
     {
         public int IdTypeProducts { get; set; }        
         public string Name { get; set; }
-        public int Price { get; set; }
-        public DateTime BuildTime { get; set; }
-        public bool IsActive { get; set; }
     }
 }
