@@ -199,6 +199,8 @@
     <Compile Include="Models\TypeBuildingsModel.cs" />
     <Compile Include="Models\TypeProductsModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
+    <Compile Include="Modules\TypeBuildModule.cs" />
+    <Compile Include="Modules\TypeProductModule.cs" />
     <Compile Include="Modules\UserModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -227,6 +229,8 @@
     <Content Include="Images\Carousel\Coin-for-carousel.png" />
     <Content Include="Images\Carousel\farm.jpg" />
     <Content Include="Images\Carousel\Vegetable.jpg" />
+    <Content Include="Images\Logo\game-button.png" />
+    <Content Include="Images\Logo\Logo.png" />
     <Content Include="Images\Logo\Untitled-1.png" />
     <Content Include="Images\Props\Bench_1.png" />
     <Content Include="Images\Props\Bench_2.png" />
