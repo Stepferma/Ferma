@@ -10,19 +10,19 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="globalBody">
+<body class="globalBody container">
     <div class="header-block">
         <div class="text-left position-absolute img-block">
-            <img class="img_logo" src="~/Images/Logo/Untitled-1.png"/>
+            <img src="~/Images/Logo/Untitled-1.png"/>
         </div>
         <div class="text-center login-reg">
             @RenderBody()
         </div>
     </div>
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Step Ferma</p>
-    </footer>
+    <div class="footer-block">
+        <p>&copy; @DateTime.Now.Year All Rights Reserved - Step Ferma</p>
     </div>
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

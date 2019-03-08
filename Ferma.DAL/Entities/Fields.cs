@@ -13,5 +13,6 @@ namespace Ferma.DAL.Entities
         public int IdField { get; set; }
         public int IdBuilding { get; set; }
         public int IdFarm { get; set; }
+        public bool IsActive { get; set; }
     }
 }

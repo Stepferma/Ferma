@@ -27,10 +27,7 @@ namespace Ferma.BLL.Services
             TypeProducts typeProduct = new TypeProducts
             {
                 IdTypeProducts = typeProductsDTO.IdTypeProducts,
-                BuildTime = typeProductsDTO.BuildTime,
-                IsActive = typeProductsDTO.IsActive,
-                Name = typeProductsDTO.Name,
-                Price = typeProductsDTO.Price
+                Name = typeProductsDTO.Name
             };
 
             Database.TypeProducts.Create(typeProduct);
@@ -48,7 +45,10 @@ namespace Ferma.BLL.Services
             {
                 return null;
             }
-            return new TypeProductsDTO { IdTypeProducts = typeProduct.IdTypeProducts, BuildTime = typeProduct.BuildTime, IsActive = typeProduct.IsActive,Name= typeProduct.Name,Price= typeProduct.Price };
+            return new TypeProductsDTO {
+                IdTypeProducts = typeProduct.IdTypeProducts,
+                Name = typeProduct.Name
+            };
         }
 
         public IEnumerable<TypeProductsDTO> GetList()

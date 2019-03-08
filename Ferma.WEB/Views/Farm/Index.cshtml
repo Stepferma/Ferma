@@ -1,71 +1,71 @@
 ﻿@model Ferma.Models.UserViewModel
 @Styles.Render("~/Content/css")
-<body class="farmbody">
-    <div class="farmhead">
-        <div class="nameplate">
-            <img src="/Images/Vegetable/Corn/Corn.png">
-            <h4>0</h4>
+<div class="modal fade" id="modDialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content d-flex justify-content-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="dialogContent">
+            </div>
         </div>
-        <div class="nameplate">
-            <img src="/Images/Vegetable/Grain/Grain.png">
-            <h4>0</h4>
-        </div>
-        <div class="nameplate">
-            <img src="/Images/Vegetable/HotPepper/HotPepper.png">
-            <h4>0</h4>
-        </div>
-        <div class="nameplate">
-            <img src="/Images/Vegetable/Brocolli/Broccoli.png">
-            <h4>0</h4>
-        </div>
-        <div class="nameplate">
-            <img src="/Images/Background/coin.png">
-            <h4>550</h4>
-        </div>
-
     </div>
+</div>
+<body class="farmbody">
+<div class="farmhead">
+    <div class="nameplate">
+        <img src="/Images/Vegetable/Corn/Corn.png">
+        <h4>0</h4>
+    </div>
+    <div class="nameplate">
+        <img src="/Images/Vegetable/Grain/Grain.png">
+        <h4>0</h4>
+    </div>
+    <div class="nameplate">
+        <img src="/Images/Vegetable/HotPepper/HotPepper.png">
+        <h4>0</h4>
+    </div>
+    <div class="nameplate">
+        <img src="/Images/Vegetable/Brocolli/Broccoli.png">
+        <h4>0</h4>
+    </div>
+    <div class="nameplate">
+        <img src="/Images/Background/coin.png">
+        <h4>550</h4>
+    </div>
+
+</div>
     <div class="farmcontent">
-        <div>
+        @*<div>
             <h1>@Model.UserName</h1>
-        </div>
-        @*<img class="swing" src="/Images/Props/Toilette.png" style="position: absolute; margin-top: 20%; margin-left: 80%; width: 15%;">
-        <img class="swing" src="/Images/Props/Scarecrow.png" style="position: absolute;margin-left: 50%; margin-top: -5%; width: 15%;">
-        <img class="swing" src="/Images/Props/Well.png" style="position: absolute;margin-left: 10%;margin-top: 30%;width: 15%;">
-        <img src="/Images/Props/BirdHouse.png" style="width: 5%;position: absolute;margin-left: 75%;">
-        <img class="swing" src="~/Images/Props/Pond/Pond_Complete.png" style="position: absolute;margin-top: -10%; width: 40%;" />
-        <img class="swing" src="~/Images/Props/Bench_1.png" style="position: absolute;margin-left: 76%;margin-top: -9%; width: 20%;" />
-        <img class="swing" src="~/Images/Props/Fireplace_Fire.png" style="position: absolute;margin-left: 74%;width: 7%;margin-top: 6%;" />
-        <img src="~/Images/Props/Road_1.png" style="position: absolute;margin-left: 72%;margin-top: 35%;width: 15%;" />*@
+        </div>*@
         <div class="farm">
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
-            <div class="field"><div class="imagefield"></div></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
+            <div class="field" data-request-url="@Url.Action("Building", "Farm")"></div>
         </div>
     </div>
 </body>

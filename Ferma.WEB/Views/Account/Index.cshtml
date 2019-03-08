@@ -1,8 +1,10 @@
 ﻿<!-- Button trigger modal -->
 @if (!User.Identity.IsAuthenticated)
 {
-@Html.ActionLink("Регистрация", "Register", "Account", new { @class = "btn btn-primary openModel" })
-@Html.ActionLink("Вход", "Login", "Account", new { @class = "btn btn-primary openModel" })
+    <div class="text-right">
+        @Html.ActionLink("Регистрация", "Register", "Account", new { @class = "btn btn-outline-primary" })
+        @Html.ActionLink("Вход", "Login", "Account", new { @class = "btn btn-secondary" })
+    </div>
 }
 else
 {
@@ -28,4 +30,12 @@ else
             </div>
         </div>
     </div>
+</div>
+
+
+<div class="container">
+    <img src="~/Images/Logo/Happy-Farm.png" class="img-fluid" >
+    <br />
+     @Html.ActionLink("Играть", "Login", "Account", new {@class = "btn btn-lg btn-primary openModel"})
+   
 </div>

@@ -13,5 +13,7 @@ namespace Ferma.DAL.Entities
         public int IdCell { get; set; }
         public int IdField { get; set; }
         public int IdProduct { get; set; }
+        public bool IsActive { get; set; }
+        public DateTime DateStart { get; set; }
     }
 }

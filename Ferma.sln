@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ferma.WEB", "Ferma.WEB\Ferma.WEB.csproj", "{4ACA242B-6F75-4354-9498-E68BB637B30E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ferma.DAL", "Ferma.DAL\Ferma.DAL.csproj", "{C7FC9EB3-7680-4D0D-826C-913867FB8F96}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ferma.BLL", "Ferma.BLL\Ferma.BLL.csproj", "{E7D185DA-E5DB-4E1B-8958-930429F6D310}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Autotest", "Autotest", "{902008D2-C5C1-4A78-9A72-68958E4424FA}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Autotest1.side = ..\..\..\Desktop\Autotest1.side
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
