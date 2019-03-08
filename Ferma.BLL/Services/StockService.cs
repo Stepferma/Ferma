@@ -63,5 +63,42 @@ namespace Ferma.BLL.Services
             var stock = mapper.Map<IEnumerable<Stocks>, List<StockDTO>>(Database.Stocks.GetAll());
             return stock;
         }
+
+
+        public bool addToStock(PlayerDTO player,ProductDTO product)
+        {
+            Stocks stock = Database.Stocks.Find(x => x.IdPlayer == player.IdPlayer).FirstOrDefault();
+            Cells cell = Database.Cells.Find(x=>x.IdProduct==product.IdProduct).FirstOrDefault();
+
+            if(cell.IsActive)
+            {
+                switch(product.Name)
+                {
+                    case "Eggs":
+                        stock.Eggs++;
+                        return true;
+                        break;
+                    case "Corn":
+                        stock.Corn++;
+                        return true;
+                        break;
+                    case "Meat":
+                        stock.Meat++;
+                        return true;
+                        break;
+                    case "Millet":
+                        stock.Millet++;
+                        return true;
+                        break;
+                        
+                }
+                return false;
+
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
